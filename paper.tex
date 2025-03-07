@@ -3,6 +3,7 @@
 \usepackage{amsfonts}
 \usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage{graphicx}
 
 \title{DBRP Research Paper}
 \author{}
@@ -142,6 +143,10 @@ Official statement initialization:
 \section{Problem Set-Up}
 Can model the bulk by a weighted undirected graph where each subregion is an RT (or minimal area) surface, which corresponds to min-cuts in \( G \).
 
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{min_cut_graph.pdf}
+\end{center}
+
 \subsection{Official Statement}
 Given as input a list of atomic boundary regions labeled \( 1, \dots, N \), a list of subsets of the regions \( R_1, \dots, R_k \subseteq [N] \), and a real-valued entropy \( S(R_i) \geq 0 \) for each \( R_i \), the weight of the minimum cut separating \( R_i \) from the rest of the boundary vertices (i.e., from \( [N] - R_i \)) is equal to \( S(R_i) \).
 
@@ -155,23 +160,22 @@ Given as input a list of atomic boundary regions labeled \( 1, \dots, N \), a li
 \section{Required Properties}
 To ensure a solution exists we \textbf{need} the following properties:
 
-\section{ ADD TWO PHOTOS}
 \begin{enumerate}
     \item \textbf{Subadditivity (SA)}: entropy of \( A \) plus entropy of \( B \) is \( \geq \) entropy of \( A \cup B \)
     \[
     S(A) + S(B) \geq S(AB)
     \]
- %   \begin{center}
- %       \includegraphics[width=0.8\textwidth]{https://hackmd.io/_uploads/S1S-H-SzJe.png}
-  %  \end{center}
+    \begin{center}
+        \includegraphics[width=\linewidth]{subaddivity.png}
+    \end{center}
     
     \item \textbf{Strong Subadditivity (SSA)}
     \[
     S(AB) + S(BC) \geq S(B) + S(ABC)
     \]
-   % \begin{center}
-  %      \includegraphics[width=0.8\textwidth]{https://hackmd.io/_uploads/S1vBSWBfyg.png}
-  %  \end{center}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{strong_subaddivity.png}
+    \end{center}
 \end{enumerate}
 
 \section{Holographic Quantum State}
@@ -206,11 +210,11 @@ All holographic quantum states \textbf{must} satisfy the following property:
     \[
     S(AC) = \min\{ S(A) + S(C), S(B) + S(D) \}
     \]
- %%   \begin{center}
-  %      \includegraphics[width=0.8\textwidth]{https://hackmd.io/_uploads/HkB0NMHG1e.jpg}
-  %  \end{center}
+    \begin{center}
+        \includegraphics[width=0.8\textwidth]{parts.pdf}
+    \end{center}
 \end{itemize}
-\section{ADD PHOTO}
+
 
 \section{Theorem: 1D Boundary}
 In special cases of a 1D boundary divided into \( N \) parts, given contiguous entropies satisfying SSA, we can always find a graph model of the bulk in linear time \( O(N^2) \). The graph model is planar, universal, and has \textbf{only} \( O(N^2) \) vertices.
@@ -224,10 +228,10 @@ In special cases of a 1D boundary divided into \( N \) parts, given contiguous e
     \item After creating a bulkless graph, we can solve for what the edge weights should be! By using a system of linear equations, SSA ensures nonnegativity.
 \end{itemize}
 
-\section{ADD PHOTO}
-%\begin{center}
-%    \includegraphics[width=0.8\textwidth]{https://hackmd.io/_uploads/H1d-6bSM1x.jpg}
-%\end{center}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{bulkless_graph.pdf}
+\end{center}
 
 This will lead to a planar graph model of the bulk. The next step will be to get the model...
 
@@ -238,10 +242,10 @@ This will lead to a planar graph model of the bulk. The next step will be to get
     \item Edge weights = weights from bulkless graph.
 \end{itemize}
 
-\section{ADD PHOTO}
-%\begin{center}
-%    \includegraphics[width=0.8\textwidth]{https://hackmd.io/_uploads/HJ_pezHzyg.jpg}
-%\end{center}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{chord_construct.pdf}
+\end{center}
 
 This yields a planar graph with \( O(N^4) \) vertices (not optimal) and the same cut structure as the bulkless graph.
 
@@ -256,10 +260,10 @@ This yields a planar graph with \( O(N^4) \) vertices (not optimal) and the same
     \item Min-cuts cut the same as the bulkless graph.
 \end{itemize}
 
-\section{ADD PHOTO}
-%\begin{center}
-%    \includegraphics[width=0.8\textwidth]{https://hackmd.io/_uploads/ry97mMHMkl.jpg}
-%\end{center}
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{subregions.pdf}
+\end{center}
 
 \section{Harmonic Edge Weights}
 This is the discrete version of AdS geometry. The entropy of a length \( L \) boundary region (where \( L \leq N/2 \)) is given as:

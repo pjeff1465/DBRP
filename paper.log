@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  6 MAR 2025 18:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  6 MAR 2025 19:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -213,6 +213,21 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@inbox=\box53
 \enit@count@id=\count286
 \enitdp@description=\count287
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen155
+\Gin@req@width=\dimen156
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count288
@@ -220,59 +235,128 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-Package hyperref Info: Link coloring OFF on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+Package hyperref Info: Link coloring OFF on input line 12.
  (./paper.out) (./paper.out)
 \@outlinefile=\write3
 \openout3 = `paper.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+ (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count289
+\scratchdimen=\dimen157
+\scratchbox=\box55
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen158
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks25
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3] [4] [5] [6] [7] [8] (./paper.aux)
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3]
+
+pdfTeX warning: pdflatex (file ./min_cut_graph.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<min_cut_graph.pdf, id=118, 614.295pt x 686.565pt>
+File: min_cut_graph.pdf Graphic file (type pdf)
+<use min_cut_graph.pdf>
+Package pdftex.def Info: min_cut_graph.pdf  used on input line 147.
+(pdftex.def)             Requested size: 276.00105pt x 308.4695pt.
+[4] [5 <./min_cut_graph.pdf>]
+<subaddivity.png, id=147, 708.6475pt x 315.1775pt>
+File: subaddivity.png Graphic file (type png)
+<use subaddivity.png>
+Package pdftex.def Info: subaddivity.png  used on input line 169.
+(pdftex.def)             Requested size: 319.99997pt x 142.32391pt.
+<strong_subaddivity.png, id=149, 673.51625pt x 254.9525pt>
+File: strong_subaddivity.png Graphic file (type png)
+<use strong_subaddivity.png>
+Package pdftex.def Info: strong_subaddivity.png  used on input line 177.
+(pdftex.def)             Requested size: 276.00105pt x 104.47673pt.
+ [6 <./subaddivity.png> <./strong_subaddivity.png>]
+<parts.pdf, id=158, 794.97pt x 533.995pt>
+File: parts.pdf Graphic file (type pdf)
+<use parts.pdf>
+Package pdftex.def Info: parts.pdf  used on input line 214.
+(pdftex.def)             Requested size: 276.00105pt x 185.39365pt.
+ [7 <./parts.pdf>]
+<bulkless_graph.pdf, id=172, 652.4375pt x 614.295pt>
+File: bulkless_graph.pdf Graphic file (type pdf)
+<use bulkless_graph.pdf>
+Package pdftex.def Info: bulkless_graph.pdf  used on input line 233.
+(pdftex.def)             Requested size: 276.00105pt x 259.8768pt.
+ [8 <./bulkless_graph.pdf>]
+
+pdfTeX warning: pdflatex (file ./chord_construct.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<chord_construct.pdf, id=184, 614.295pt x 700.6175pt>
+File: chord_construct.pdf Graphic file (type pdf)
+<use chord_construct.pdf>
+Package pdftex.def Info: chord_construct.pdf  used on input line 247.
+(pdftex.def)             Requested size: 276.00105pt x 314.78319pt.
+[9 <./chord_construct.pdf>]
+
+pdfTeX warning: pdflatex (file ./subregions.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<subregions.pdf, id=199, 236.885pt x 794.97pt>
+File: subregions.pdf Graphic file (type pdf)
+<use subregions.pdf>
+Package pdftex.def Info: subregions.pdf  used on input line 265.
+(pdftex.def)             Requested size: 276.00105pt x 926.26588pt.
+[10]
+Overfull \vbox (376.26588pt too high) has occurred while \output is active []
+
+ [11 <./subregions.pdf>] [12] (./paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 6C5C0C026ECC419AFCFAB5341563F4EF;3896.
+(rerunfilecheck)             Checksum: 09C9D1E70E6B62217D590F876A6B7C95;3395.
  ) 
 Here is how much of TeX's memory you used:
- 8720 strings out of 474116
- 134629 string characters out of 5743682
+ 9577 strings out of 474116
+ 148029 string characters out of 5743682
  1935187 words of memory out of 5000000
- 30955 multiletter control sequences out of 15000+600000
+ 31784 multiletter control sequences out of 15000+600000
  566613 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,422b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,422b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on paper.pdf (8 pages, 167583 bytes).
+Output written on paper.pdf (12 pages, 1983117 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
- 198 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 
