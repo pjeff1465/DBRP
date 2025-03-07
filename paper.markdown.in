@@ -1,0 +1,120 @@
+# Task 1 - DBRP
+### Goal
+- Gain understanding on bulk reconstruction algorithm
+- Source: Discrete bulk reconstruction Scott Aaronson and Jason Pollack
+
+
+
+---
+## Background
+### AdS (Anti-de Sitter)
+- higher-dimensional **bulk** space
+- **Bulk**: AdS space
+- **Surface**: geometric object within AdS space
+- **Minimal area**: surface that spans the boundary subregion and has smallest possible area $\leftarrow$ *(RT surface in AdS/CFT)*
+- The bulk is very hard to calculate directly because of quantum gravity, therefore perform calculations on CFT.
+### CFT (conformal field theory)
+- **Boundary** ==> CFT
+- lower-dimensional space that forms "edge" or "boundary" of AdS bulk
+- Non-gravitational theory that lives on the boundary of the AdS spacetime
+- Information of boundary is encoded in the bulk
+
+##### Quick Notes about AdS and CFT
+- If dealing with 5-dimensional AdS bulk, the boundary is typically 4-dimensional, and the CFT lives on this 4-dimensional boundary
+- DBRP idea in physic terms:
+    - Because the CFT is a non-gravitational theory, it is easier to make computations and to understand. And because it lives on the boundary of the AdS space, we can use the CFT to reconstruct the gravitational dynamics of the AdS bulk
+    - Given a CFT state, we can determine the corresponding spacetime that the CFT describes, including its geometry and gravitational dynamics.
+    - Then we can use entanglement entropy in the CFT to learn about spacetime geometry in the bulk
+#### AdS/CFT
+- **AdS/CFT correspondence** ==> the gravitational theory in the bulk is equivalent to the non-gravitational CFT on the boundary
+    - i.e two theories describe the same physics, but from different perspectives
+- **Holographic Relationship**: everything happening in the bulk AdS spacetime can be described by the boundary CFT, vice versa
+- consists of two theories (theory of quantum gravity and a quantum field theory, with no gravity) relation between two theories is called "holographic"
+- Theories are "equivalent"? (yet to be proven)
+    - meaning, exists a mapping or "dictionary", mapping all states and observables from one theory to corresponding states and observables in other
+- currently lack full dictonary for AdS side
+
+note: holographic dictionary refers to mapping of all states and observables from AdS to CFT
+### Quick note about spacetime geometry (physics)
+- Gravity is a curvature of spacetime (caused by mass and energy)
+- "geometry" of spacetime refers to this curve
+    - i.e if no gravity, geometry is simple and uncurved
+#### Spacetime Geometry for AdS/CFT
+- In AdS space, geometry is negatively curved
+- **CFT can reconstruct the geometry of AdS bulk** --> Meaning: data in the CFT can be used to determine how spacetime is shaped or curved in AdS bulk.
+- **ENTANGLEMENT IS DIRECTLY RELATED TO GEOMETRY OF THE BULK SPACETIME**
+    - amount of entanglement in different regions of CFT tells us about structure and curvature of the corresponding bulk spacetime in AdS
+    - more entanglement on the boundary implies more curvature or structure in the bulk geometry
+    - Proven with RT formula: more entanglement = larger minimal surface area = more curved and intricate bulk geometry
+
+##### Why important?
+- Shape of spacetime tells us how gravity behaves
+- If we can reconstruct the bulk geometry from the CFT, we can gain insights into the quantum aspects of gravity and understand how measurements (or experiments) on the boundary affect the information encoded in the bulk
+
+### Entanglement Measurements
+- not needed for DBRP because problem states initally given full AdS/CFT correspondence
+#### Von Neumann entropy
+- refers to a measure of quantum entanglement i.e. information contained in a specific region (usually in lower-dimensional, CFT)
+
+#### Ryu-Takayanagi (RT) Formula and Holographic Dictonary
+**Key entry in holographic dictionary is** *Ryu-Takayanagi (RT) forumla*
+- Equates von Neumann entropy of subregion of boundary state with the minimal area among all bulk surfaces that end on that boundary region
+    - **Meaning:** entropy (amount of quantum information) in a certain part of the boundary is tied to area of the smallest surface that stretches into the bulk but connects to that boundary (geometrical way of understanding quantum entanglement)
+
+##### Minimal area of bulk surface: in higher-dimensional bulk space (AdS) exists a surface whose area corresponds to entanglment in boundary region
+- Theory says: smallest possible area of this surface (RT surface) is proportional to entropy of boundary subregion
+- Meaning: If you can find RT you know entropy (or information) of subregion inside boundary
+- Amount of quantum information in certain part of boundary is tied to area of smallest surface that stretches into the bulk but connects to that boundary
+- The more entangled the boundary region is, the larger the area of corresponding surface in the AdS bulk
+
+
+**RT surface is proportional to von Neumann entropy which quantifies quantum entanglement or information of subregion**
+**== But for DBRP we are given full entanglement structure ==**
+
+## Discrete Bulk Reconstruction Problem
+Official statement initialization: Given a factorization of the finite-dimensional Hilbert space as an N-fold tensor product
+$$\mathcal{H} = \otimes^{N}_{i=1}\mathcal{H}_{i}$$
+> ##### Note about tensor product, Hilbert space, and, qubits:
+> Tensor Product is a mathematical operation used to describe system with multiple qubits. It that combines two or more Hilbert spaces into a single composit Hilbert space, or one large vector space. The larger space captures the full state space of combined quantum system
+> For a single qubit: $|0\rangle$ $|1\rangle$, form a basis for a two-dimensional Hilbert sapce
+>> Therefore a n-qubit system has a Hilbert space of $2^n$ dimension
+>
+> It is important because it gives us a comprehensize way to represent entangled and composite states
+>
+> Quantum gates are represented by unitary operators (meaning preserves inner product) that act on Hilbert sapce, "unitary transformation"
+>
+> Qubits are represented as vectors in a Hilbert space. Which  allows us to describe quantum states and calculate probabilities of measurement outcomes. Where probabilities are derived using the Born rule, which uses the inner product structure to compute the squared magnitude of the projection of one vector onto another
+> $$P = |\langle\phi|\psi\rangle|^2$$
+>> Where:
+$|\psi\rangle$ represent the quantum state of the system (a unit vector in Hilbert space)
+>> $|\phi\rangle$ represent one of the basis states of measurent (or unit vector in the same Hilbert space)
+>
+> Inner product is important to preserve total probability. Where probability of measuring a qubit and finding it in a certain state is based on inner product of "projecting" one vector onto another
+> $$|\alpha|^2 + |\beta|^2=1$$
+>Where probability of finding it in state $|0\rangle$ ... $$|\langle0|\psi\rangle|^2=|\alpha|^2$$
+>
+>Calculating probability on single qubit system example:
+> Tensor Product on 2 qubit system example:
+
+Take an input of an abstract list of entropies either $2^{N-1}-1$ entries arranged into an entropy vector,
+$$\overrightarrow{S}^{(N)}\equiv(S_1, S_2,...,S_N, S_{1,2},S_{1,3},...,S_{1,N},...,S_{N-1,N},S_{1,2,3},...)$$
+or some subset of this list. For all $i \epsilon [N]$, say $S_i$ is an entropy of the $i^{th}$ *atomic region*, and have in mind that the untion of the N atmoic regions comprises the entire boundary.
+- Note about notation:
+    - label atomic regions by Latin letters
+    - S(AC) meaning the entropy of $AC \equiv A\cup C$, union of atmoic regions A and C
+- Note: this approach differs from other approaches because instead of using entropies dervied from some particular $|\psi\rangle$ instead, take input from abstract list of $2^{n-1}-1$ entropies
+
+### Side Note: Min-cut Theory
+- Feature of AdS/CFT
+- Given a finite weighted undirected graph G with real edge weights w(e) >= 0, as well as two disjoint vertices R,R'
+- A min-cut is a set C of edges with minimum total weight
+$W = \Sigma_{e\space\epsilon \space C}\space w(e)$
+- whose removal disconnects R from R'
+
+## Problem Set-Up
+Can model bulk by weighted undirected graph Where each subregion is a RT (or minimal area) surface which correpsonds to min cuts in G
+# ADD IMAGE (min_cut_graph)
+
+
+
+---
