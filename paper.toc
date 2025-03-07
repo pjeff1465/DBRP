@@ -3,8 +3,8 @@
 \contentsline {subsection}{\numberline {2.1}AdS (Anti-de Sitter) Space $\Rightarrow $ The Bulk}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}CFT (Conformal Field Theory) Space $\Rightarrow $ The Boundary}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Holographic Principle}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Spacetime geometry and what it means in AdS/CFT space}{5}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Why is this important?}{6}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.4}Spacetime Geometry and What It Means in AdS/CFT Space}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Why Is This Important?}{6}{subsection.2.5}%
 \contentsline {section}{\numberline {3}RT formula and Holographic Dictionary}{6}{section.3}%
 \contentsline {subsubsection}{\numberline {3.0.1}Von Neumann entropy}{6}{subsubsection.3.0.1}%
 \contentsline {subsubsection}{\numberline {3.0.2}Ryu-Takayanagi (RT)}{6}{subsubsection.3.0.2}%
