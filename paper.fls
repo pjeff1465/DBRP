@@ -156,6 +156,11 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 OUTPUT paper.toc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT ./ads_cft.jpeg
+INPUT ./ads_cft.jpeg
+INPUT ./ads_cft.jpeg
+INPUT ./ads_cft.jpeg
+INPUT ./ads_cft.jpeg
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
