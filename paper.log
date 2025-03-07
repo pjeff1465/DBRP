@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  6 MAR 2025 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  6 MAR 2025 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -9,8 +9,8 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count188
 \c@section=\count189
@@ -228,135 +228,212 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen155
 \Gin@req@width=\dimen156
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/abstract/abstract.sty
+Package: abstract 2009/06/08 v1.2a configurable abstracts
+\abstitleskip=\skip55
+\absleftindent=\skip56
+\absrightindent=\skip57
+\absparindent=\skip58
+\absparsep=\skip59
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count288
+\Gm@cntv=\count289
+\c@Gm@tempcnt=\count290
+\Gm@bindingoffset=\dimen157
+\Gm@wd@mp=\dimen158
+\Gm@odd@mp=\dimen159
+\Gm@even@mp=\dimen160
+\Gm@layoutwidth=\dimen161
+\Gm@layoutheight=\dimen162
+\Gm@layouthoffset=\dimen163
+\Gm@layoutvoffset=\dimen164
+\Gm@dimlist=\toks24
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count288
+\l__color_backend_stack_int=\count291
 \l__pdf_internal_box=\box54
 ) (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-Package hyperref Info: Link coloring OFF on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+Package hyperref Info: Link coloring OFF on input line 19.
  (./paper.out) (./paper.out)
 \@outlinefile=\write3
 \openout3 = `paper.out'.
 
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
-\scratchdimen=\dimen157
+\scratchcounter=\count292
+\scratchdimen=\dimen165
 \scratchbox=\box55
-\nofMPsegments=\count290
-\nofMParguments=\count291
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count292
-\MPscratchDim=\dimen158
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
-\everyMPtoPDFconversion=\toks25
+\nofMPsegments=\count293
+\nofMParguments=\count294
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count295
+\MPscratchDim=\dimen166
+\MPnumerator=\count296
+\makeMPintoPDFobject=\count297
+\everyMPtoPDFconversion=\toks26
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3]
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./paper.toc)
+\tf@toc=\write4
+\openout4 = `paper.toc'.
+
+ [2] [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [4] [5]
 
 pdfTeX warning: pdflatex (file ./min_cut_graph.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<min_cut_graph.pdf, id=118, 614.295pt x 686.565pt>
+<min_cut_graph.pdf, id=65, 614.295pt x 686.565pt>
 File: min_cut_graph.pdf Graphic file (type pdf)
 <use min_cut_graph.pdf>
-Package pdftex.def Info: min_cut_graph.pdf  used on input line 147.
-(pdftex.def)             Requested size: 276.00105pt x 308.4695pt.
-[4] [5 <./min_cut_graph.pdf>]
-<subaddivity.png, id=147, 708.6475pt x 315.1775pt>
+Package pdftex.def Info: min_cut_graph.pdf  used on input line 160.
+(pdftex.def)             Requested size: 362.37569pt x 405.00699pt.
+[6 <./min_cut_graph.pdf>]
+<subregions.png, id=88, 707.64375pt x 206.7725pt>
+File: subregions.png Graphic file (type png)
+<use subregions.png>
+Package pdftex.def Info: subregions.png  used on input line 177.
+(pdftex.def)             Requested size: 362.37569pt x 105.88797pt.
+<subaddivity.png, id=90, 708.6475pt x 315.1775pt>
 File: subaddivity.png Graphic file (type png)
 <use subaddivity.png>
-Package pdftex.def Info: subaddivity.png  used on input line 169.
-(pdftex.def)             Requested size: 319.99997pt x 142.32391pt.
-<strong_subaddivity.png, id=149, 673.51625pt x 254.9525pt>
+Package pdftex.def Info: subaddivity.png  used on input line 193.
+(pdftex.def)             Requested size: 423.5932pt x 188.401pt.
+ [7 <./subregions.png>]
+<strong_subaddivity.png, id=103, 673.51625pt x 254.9525pt>
 File: strong_subaddivity.png Graphic file (type png)
 <use strong_subaddivity.png>
-Package pdftex.def Info: strong_subaddivity.png  used on input line 177.
-(pdftex.def)             Requested size: 276.00105pt x 104.47673pt.
- [6 <./subaddivity.png> <./strong_subaddivity.png>]
-<parts.pdf, id=158, 794.97pt x 533.995pt>
+Package pdftex.def Info: strong_subaddivity.png  used on input line 201.
+(pdftex.def)             Requested size: 362.37569pt x 137.17433pt.
+ [8 <./subaddivity.png> <./strong_subaddivity.png>]
+<parts.pdf, id=113, 794.97pt x 533.995pt>
 File: parts.pdf Graphic file (type pdf)
 <use parts.pdf>
-Package pdftex.def Info: parts.pdf  used on input line 214.
-(pdftex.def)             Requested size: 276.00105pt x 185.39365pt.
- [7 <./parts.pdf>]
-<bulkless_graph.pdf, id=172, 652.4375pt x 614.295pt>
+Package pdftex.def Info: parts.pdf  used on input line 241.
+(pdftex.def)             Requested size: 362.37569pt x 243.41624pt.
+ [9 <./parts.pdf>]
+<bulkless_graph.pdf, id=131, 652.4375pt x 614.295pt>
 File: bulkless_graph.pdf Graphic file (type pdf)
 <use bulkless_graph.pdf>
-Package pdftex.def Info: bulkless_graph.pdf  used on input line 233.
-(pdftex.def)             Requested size: 276.00105pt x 259.8768pt.
- [8 <./bulkless_graph.pdf>]
+Package pdftex.def Info: bulkless_graph.pdf  used on input line 262.
+(pdftex.def)             Requested size: 271.7835pt x 255.9025pt.
+
 
 pdfTeX warning: pdflatex (file ./chord_construct.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<chord_construct.pdf, id=184, 614.295pt x 700.6175pt>
+<chord_construct.pdf, id=132, 614.295pt x 700.6175pt>
 File: chord_construct.pdf Graphic file (type pdf)
 <use chord_construct.pdf>
-Package pdftex.def Info: chord_construct.pdf  used on input line 247.
-(pdftex.def)             Requested size: 276.00105pt x 314.78319pt.
-[9 <./chord_construct.pdf>]
+Package pdftex.def Info: chord_construct.pdf  used on input line 276.
+(pdftex.def)             Requested size: 271.7835pt x 309.97244pt.
+[10 <./bulkless_graph.pdf>]
+<edge_weights.pdf, id=146, 730.73pt x 614.295pt>
+File: edge_weights.pdf Graphic file (type pdf)
+<use edge_weights.pdf>
+Package pdftex.def Info: edge_weights.pdf  used on input line 293.
+(pdftex.def)             Requested size: 271.7835pt x 228.476pt.
+ [11 <./chord_construct.pdf>]
 
-pdfTeX warning: pdflatex (file ./subregions.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<subregions.pdf, id=199, 236.885pt x 794.97pt>
-File: subregions.pdf Graphic file (type pdf)
-<use subregions.pdf>
-Package pdftex.def Info: subregions.pdf  used on input line 265.
-(pdftex.def)             Requested size: 276.00105pt x 926.26588pt.
-[10]
-Overfull \vbox (376.26588pt too high) has occurred while \output is active []
-
- [11 <./subregions.pdf>] [12] (./paper.aux)
+pdfTeX warning: pdflatex (file ./harmonic.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<harmonic.pdf, id=163, 706.64pt x 614.295pt>
+File: harmonic.pdf Graphic file (type pdf)
+<use harmonic.pdf>
+Package pdftex.def Info: harmonic.pdf  used on input line 300.
+(pdftex.def)             Requested size: 362.37569pt x 315.02037pt.
+[12 <./edge_weights.pdf> <./harmonic.pdf>]
+<dbrp_summed.pdf, id=203, 456.74641pt x 590.6567pt>
+File: dbrp_summed.pdf Graphic file (type pdf)
+<use dbrp_summed.pdf>
+Package pdftex.def Info: dbrp_summed.pdf  used on input line 310.
+(pdftex.def)             Requested size: 362.37569pt x 468.64154pt.
+ [13 <./dbrp_summed.pdf>] [14] (./paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 09C9D1E70E6B62217D590F876A6B7C95;3395.
+(rerunfilecheck)             Checksum: 9BCCEECEEBEA15A1DDE5AF01AB9E9329;294.
  ) 
 Here is how much of TeX's memory you used:
- 9577 strings out of 474116
- 148029 string characters out of 5743682
- 1935187 words of memory out of 5000000
- 31784 multiletter control sequences out of 15000+600000
- 566613 words of font info for 69 fonts, out of 8000000 for 9000
+ 10162 strings out of 474116
+ 157400 string characters out of 5743682
+ 1936187 words of memory out of 5000000
+ 32345 multiletter control sequences out of 15000+600000
+ 568600 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,422b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on paper.pdf (12 pages, 1983117 bytes).
+ 75i,7n,79p,481b,654s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on paper.pdf (14 pages, 4453474 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 212 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 514 PDF objects out of 1000 (max. 8388607)
+ 360 compressed objects within 4 object streams
+ 58 named destinations out of 1000 (max. 500000)
+ 75 words of extra memory for PDF output out of 10000 (max. 10000000)
 

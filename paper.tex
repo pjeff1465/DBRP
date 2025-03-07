@@ -1,29 +1,42 @@
-\documentclass{article}
+\documentclass[12pt]{article}
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{graphicx}
+\usepackage{abstract}
+\usepackage{geometry}
 
-\title{DBRP Research Paper}
-\author{}
-\date{}
+% page settings
+\geometry{a4paper, margin=1in} % sets A4 paper with 1-inch margins
+
+% Title Page
+\title{\textbf{Discrete Bulk Reconstruction Problem} \\ \large Compiled Research}
+\author{Piper Jeffries \\ Missouri S\&T \\ \texttt{pejbvy@umsystem.edu}}
+\date{\today}
 
 \begin{document}
 
 \maketitle
 
-\section{Task 1 - DBRP}
+\begin{abstract}
+    This is example abstract. 
+\end{abstract}
 
-\subsection*{Goal}
-\begin{itemize}
-    \item Gain understanding on bulk reconstruction algorithm
-    \item Source: Discrete bulk reconstruction, Scott Aaronson and Jason Pollack
-\end{itemize}
+\newpage 
+\tableofcontents
+\newpage
 
-\section{Background}
+\section{Introduction}
+    Intro provides background info, motivation, and objective of research. Explain why problem is important and summarize prior work
 
-\subsection{AdS (Anti-de Sitter)}
+\section{Methodology}
+Describe your approach, methods, and any theoretical background required. If you include equations, use:
+
+\section*{Background}
+
+\subsection*{AdS (Anti-de Sitter)}
 \begin{itemize}
     \item Higher-dimensional \textbf{bulk} space
     \item \textbf{Bulk}: AdS space
@@ -32,7 +45,7 @@
     \item The bulk is very hard to calculate directly because of quantum gravity, therefore perform calculations on CFT.
 \end{itemize}
 
-\subsection{CFT (Conformal Field Theory)}
+\subsection*{CFT (Conformal Field Theory)}
 \begin{itemize}
     \item \textbf{Boundary} $\Rightarrow$ CFT
     \item Lower-dimensional space that forms "edge" or "boundary" of AdS bulk
@@ -51,7 +64,7 @@
     \end{itemize}
 \end{itemize}
 
-\subsection{AdS/CFT}
+\subsection*{AdS/CFT}
 \begin{itemize}
     \item \textbf{AdS/CFT correspondence} $\Rightarrow$ The gravitational theory in the bulk is equivalent to the non-gravitational CFT on the boundary
     \item i.e. Two theories describe the same physics, but from different perspectives
@@ -71,7 +84,7 @@
     \end{itemize}
 \end{itemize}
 
-\subsubsection{Spacetime Geometry for AdS/CFT}
+\subsubsection*{Spacetime Geometry for AdS/CFT}
 \begin{itemize}
     \item In AdS space, geometry is negatively curved.
     \item \textbf{CFT can reconstruct the geometry of AdS bulk}: Meaning, data in the CFT can be used to determine how spacetime is shaped or curved in the AdS bulk.
@@ -89,7 +102,7 @@
     \item If we can reconstruct the bulk geometry from the CFT, we can gain insights into the quantum aspects of gravity and understand how measurements (or experiments) on the boundary affect the information encoded in the bulk.
 \end{itemize}
 
-\subsection{Entanglement Measurements}
+\subsection*{Entanglement Measurements}
 \begin{itemize}
     \item Not needed for DBRP because problem states initially given full AdS/CFT correspondence.
 \end{itemize}
@@ -116,7 +129,7 @@
 
 \textbf{RT surface is proportional to von Neumann entropy which quantifies quantum entanglement or information of subregion.}
 
-\section{Discrete Bulk Reconstruction Problem}
+\section*{Discrete Bulk Reconstruction Problem}
 Official statement initialization:
 \[
 \mathcal{H} = \otimes^{N}_{i=1}\mathcal{H}_{i}
@@ -140,24 +153,35 @@ Official statement initialization:
     whose removal disconnects \( R \) from \( R' \).
 \end{itemize}
 
-\section{Problem Set-Up}
+\section*{Problem Set-Up}
 Can model the bulk by a weighted undirected graph where each subregion is an RT (or minimal area) surface, which corresponds to min-cuts in \( G \).
 
 \begin{center}
     \includegraphics[width=0.8\textwidth]{min_cut_graph.pdf}
 \end{center}
 
-\subsection{Official Statement}
+\subsection*{Official Statement}
 Given as input a list of atomic boundary regions labeled \( 1, \dots, N \), a list of subsets of the regions \( R_1, \dots, R_k \subseteq [N] \), and a real-valued entropy \( S(R_i) \geq 0 \) for each \( R_i \), the weight of the minimum cut separating \( R_i \) from the rest of the boundary vertices (i.e., from \( [N] - R_i \)) is equal to \( S(R_i) \).
 
-\subsection{General Idea}
-\begin{itemize}
-    \item If we are given the complete entanglement structure of the boundary, we are therefore provided with a min-cut graph of the boundary entropies. We can then perform an experiment in the bulk space and use min-cut theory on the boundary to reconstruct the entropy graph.
-\end{itemize}
+\subsection*{General Idea}
+If we are given the complete entanglement structure of the boundary, we are therefore provided with a min-cut graph of the boundary entropies. We can then perform an experiment in the bulk space and use min-cut theory on the boundary to reconstruct the entropy graph. Giving us an interpretation of what the outcome would be in the bulk, because the boundary information is encoded in the bulk.
 
-\textbf{This is basically the inverse min-cut problem.} Given the min-cut, find the graph that gave you the min-cut solution. 
+\textbf{This is basically the inverse min-cut problem.} Now we are given min-cut, find graph that gave you min-cut solution, therefore this graph is not unique. While the graph is not unique you can add on additional properties. For example, planar, few vertices. For this problem assume no wormholes. For DBRP to work we need to make ensure all quantum states satisfies properties (more on that later). \\
+It is important to note and prove DBRP is computable, meaning it has an upper bound. \\
+It has an upper bound of $2^{2^N}$
 
-\section{Required Properties}
+\section*{Proof:}
+Given $K\leq2^N$ boundary regions form all $\leq2^N$ possible intersections of RT regions. At most 1 vertex needed in each region. Using linear programs for each edge weight takes "only" exp(exp(exp(N))) time!
+
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{subregions.png}
+\end{center}
+
+\subsection*{How to determine edge weights?}
+Use linear programming, for every possibility of what min-cuts could be try to solve some linear equations and equalities. Can we set edge weights so that it will be min-cut?
+\\Therefore, gives us algo for deciding any instance of DBRP.
+
+\section*{Required Properties}
 To ensure a solution exists we \textbf{need} the following properties:
 
 \begin{enumerate}
@@ -178,7 +202,7 @@ To ensure a solution exists we \textbf{need} the following properties:
     \end{center}
 \end{enumerate}
 
-\section{Holographic Quantum State}
+\section*{Holographic Quantum State}
 \begin{itemize}
     \item Boundary state in CFT that, due to holography, has a corresponding interpretation in bulk AdS space.
     \item This allows us to perform computations on a lower-dimensional boundary with no gravity, which then gives us information about higher-dimensional gravity in bulk space.
@@ -186,21 +210,23 @@ To ensure a solution exists we \textbf{need} the following properties:
 \end{itemize}
 
 All holographic quantum states \textbf{must} satisfy the following property:
-\begin{itemize}
+\begin{enumerate}
     \item \textbf{Monogamy of Mutual Information (MMI)}
     \[
     S(AB) + S(BC) + S(AC) \geq S(A) + S(B) + S(C) + S(ABC)
     \]
-\end{itemize}
+\end{enumerate}
 
 \textbf{Question:} Are these properties what give us geometry?
 
-\section{DBRP on 1-dimensional Hilbert Space}
+\section*{DBRP on 1-dimensional Hilbert Space}
 \begin{itemize}
     \item Note: To perform DBRP on a higher-dimensional Hilbert space, take the tensor product of each Hilbert space to create one large Hilbert space.
     \[
     \mathcal{H}_{\text{total}} = \mathcal{H}_1 \otimes \mathcal{H}_2 \otimes \dots \otimes \mathcal{H}_N
     \]
+\end{itemize}
+\begin{enumerate}
     \item Upper bound for contiguous boundary regions: 
     \[
     \frac{N(N-1)}{2}
@@ -210,18 +236,21 @@ All holographic quantum states \textbf{must} satisfy the following property:
     \[
     S(AC) = \min\{ S(A) + S(C), S(B) + S(D) \}
     \]
-    \begin{center}
-        \includegraphics[width=0.8\textwidth]{parts.pdf}
-    \end{center}
-\end{itemize}
+    \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
+        \centering
+        \includegraphics[width=0.8\textwidth]{parts.pdf}  % Adjust width as needed
+        \caption{Where the first option is in red and second option is in blue}  % Caption text
+        \label{fig:example}  % Label for referencing
+    \end{figure}
+\end{enumerate}
 
 
-\section{Theorem: 1D Boundary}
+\section*{Theorem: 1D Boundary}
 In special cases of a 1D boundary divided into \( N \) parts, given contiguous entropies satisfying SSA, we can always find a graph model of the bulk in linear time \( O(N^2) \). The graph model is planar, universal, and has \textbf{only} \( O(N^2) \) vertices.
 
 \textbf{Note:} Only need to satisfy SSA for 1D.
 
-\section{Proof of 1D, with Examples}
+\section*{Proof of 1D, with Examples}
 \begin{itemize}
     \item Any contiguous boundary data that satisfies SSA admits a "bulkless" graph.
     \item A bulkless graph is a graph of pure edges and no vertices.
@@ -230,12 +259,12 @@ In special cases of a 1D boundary divided into \( N \) parts, given contiguous e
 
 
 \begin{center}
-    \includegraphics[width=0.8\textwidth]{bulkless_graph.pdf}
+    \includegraphics[width=0.6\textwidth]{bulkless_graph.pdf}
 \end{center}
 
 This will lead to a planar graph model of the bulk. The next step will be to get the model...
 
-\section{Chord Construction}
+\section*{Chord Construction}
 \begin{itemize}
     \item Get model of graph.
     \item Take all edges in between atomic boundary regions and add a chord (vertex) where each edge intersects.
@@ -244,14 +273,14 @@ This will lead to a planar graph model of the bulk. The next step will be to get
 
 
 \begin{center}
-    \includegraphics[width=0.8\textwidth]{chord_construct.pdf}
+    \includegraphics[width=0.6\textwidth]{chord_construct.pdf}
 \end{center}
 
 This yields a planar graph with \( O(N^4) \) vertices (not optimal) and the same cut structure as the bulkless graph.
 
 \textbf{Note:} Since the bulkless graph has correct cut values, the planar graph will also have correct cut values. However, \( O(N^4) \) is not optimal, so a better construction was developed...
 
-\section{Diamondwork Construction}
+\section*{Diamondwork Construction}
 \begin{itemize}
     \item Yields \( O(N^2) \) vertices and edges.
     \item Reduce via a planar graph made up of "overlapping" triangles, each contributing weight from the bulkless graph.
@@ -260,29 +289,41 @@ This yields a planar graph with \( O(N^4) \) vertices (not optimal) and the same
     \item Min-cuts cut the same as the bulkless graph.
 \end{itemize}
 
-
 \begin{center}
-    \includegraphics[width=0.8\textwidth]{subregions.pdf}
+    \includegraphics[width=0.6\textwidth]{edge_weights.pdf}
 \end{center}
 
-\section{Harmonic Edge Weights}
+\section*{Harmonic Edge Weights}
 This is the discrete version of AdS geometry. The entropy of a length \( L \) boundary region (where \( L \leq N/2 \)) is given as:
 
-\section{ADD PHOTO}
-%\begin{center}
-%    \includegraphics[width=0.8\textwidth]{https://hackmd.io/_uploads/B1S_4MBMJl.jpg}
-%\end{center}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{harmonic.pdf}
+\end{center}
 
-\section{Why No Black Holes?}
+\section*{Why No Black Holes?}
 \begin{itemize}
     \item All edge weights have the same value, therefore the RT minimal surface means nothing.
     \item There is no advantage to cutting deeper into the bulk.
 \end{itemize}
 
-\section{ADD PHOTO}
-%\begin{center}
-%    \includegraphics[width=0.8\textwidth]{https://hackmd.io/_uploads/BJLSNo1VJe.jpg}
-%\end{center}
+\begin{center}
+    \includegraphics[width=0.8\textwidth]{dbrp_summed.pdf}
+\end{center}
+
+\section{Conclusion}
+Summarize key findings, limitations, and possible future research directions
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%%%%%%
+\begin{thebibliography}{9}
+    \bibitem{example}
+    Scott Aaronson and Jason Pollack, \textit{Discrete bulk reconstruction}, 2023.
+    \bibitem{2}
+    Ronak Ramachandran, \textit{Further Exploration of the Discrete Bulk Reconstruction Problem}, 2023.
+    \bibitem{AI}
+    ChatGPT
+\end{thebibliography}
 
 \end{document}
 
