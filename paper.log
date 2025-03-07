@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  7 MAR 2025 13:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  7 MAR 2025 14:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -256,11 +256,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count291
 \l__pdf_internal_box=\box54
-) (./paper.aux
-
-LaTeX Warning: Label `fig:example' multiply defined.
-
-)
+) (./paper.aux)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -353,100 +349,135 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `paper.toc'.
 
  [2]
-<ads_cft.jpeg, id=34, 1125.20375pt x 813.0375pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 49.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Rightarrow' on input line 49.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 49.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Rightarrow' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 57.
+
+<ads_cft.jpeg, id=75, 1217.54875pt x 779.91376pt>
 File: ads_cft.jpeg Graphic file (type jpg)
 <use ads_cft.jpeg>
 Package pdftex.def Info: ads_cft.jpeg  used on input line 67.
-(pdftex.def)             Requested size: 362.37569pt x 261.8397pt.
- [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [4 <./ads_cft.jpeg>] [5] [6]
+(pdftex.def)             Requested size: 362.37569pt x 232.11945pt.
+[3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 81--89
+
+ []
+
+[4 <./ads_cft.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 96--104
+
+ []
+
+[5]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 116.
+
+[6]
 
 pdfTeX warning: pdflatex (file ./min_cut_graph.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<min_cut_graph.pdf, id=73, 614.295pt x 686.565pt>
+<min_cut_graph.pdf, id=99, 614.295pt x 686.565pt>
 File: min_cut_graph.pdf Graphic file (type pdf)
 <use min_cut_graph.pdf>
-Package pdftex.def Info: min_cut_graph.pdf  used on input line 177.
+Package pdftex.def Info: min_cut_graph.pdf  used on input line 165.
 (pdftex.def)             Requested size: 362.37569pt x 405.00699pt.
-[7 <./min_cut_graph.pdf>]
-<subregions.png, id=95, 707.64375pt x 206.7725pt>
+[7] [8 <./min_cut_graph.pdf>]
+<subregions.png, id=132, 707.64375pt x 206.7725pt>
 File: subregions.png Graphic file (type png)
 <use subregions.png>
-Package pdftex.def Info: subregions.png  used on input line 194.
+Package pdftex.def Info: subregions.png  used on input line 182.
 (pdftex.def)             Requested size: 362.37569pt x 105.88797pt.
-<subaddivity.png, id=97, 708.6475pt x 315.1775pt>
+<subaddivity.png, id=134, 708.6475pt x 315.1775pt>
 File: subaddivity.png Graphic file (type png)
 <use subaddivity.png>
-Package pdftex.def Info: subaddivity.png  used on input line 210.
+Package pdftex.def Info: subaddivity.png  used on input line 198.
 (pdftex.def)             Requested size: 423.5932pt x 188.401pt.
- [8 <./subregions.png> <./subaddivity.png>]
-<strong_subaddivity.png, id=109, 673.51625pt x 254.9525pt>
+<strong_subaddivity.png, id=135, 673.51625pt x 254.9525pt>
 File: strong_subaddivity.png Graphic file (type png)
 <use strong_subaddivity.png>
-Package pdftex.def Info: strong_subaddivity.png  used on input line 218.
+Package pdftex.def Info: strong_subaddivity.png  used on input line 206.
 (pdftex.def)             Requested size: 362.37569pt x 137.17433pt.
-<parts.pdf, id=110, 794.97pt x 533.995pt>
+ [9 <./subregions.png> <./subaddivity.png>]
+<parts.pdf, id=148, 794.97pt x 533.995pt>
 File: parts.pdf Graphic file (type pdf)
 <use parts.pdf>
-Package pdftex.def Info: parts.pdf  used on input line 258.
+Package pdftex.def Info: parts.pdf  used on input line 246.
 (pdftex.def)             Requested size: 362.37569pt x 243.41624pt.
- [9 <./strong_subaddivity.png>]
-<bulkless_graph.pdf, id=123, 652.4375pt x 614.295pt>
+ [10 <./strong_subaddivity.png>]
+<bulkless_graph.pdf, id=161, 652.4375pt x 614.295pt>
 File: bulkless_graph.pdf Graphic file (type pdf)
 <use bulkless_graph.pdf>
-Package pdftex.def Info: bulkless_graph.pdf  used on input line 279.
+Package pdftex.def Info: bulkless_graph.pdf  used on input line 267.
 (pdftex.def)             Requested size: 271.7835pt x 255.9025pt.
- [10 <./parts.pdf>]
+ [11 <./parts.pdf>]
 
 pdfTeX warning: pdflatex (file ./chord_construct.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<chord_construct.pdf, id=138, 614.295pt x 700.6175pt>
+<chord_construct.pdf, id=176, 614.295pt x 700.6175pt>
 File: chord_construct.pdf Graphic file (type pdf)
 <use chord_construct.pdf>
-Package pdftex.def Info: chord_construct.pdf  used on input line 293.
+Package pdftex.def Info: chord_construct.pdf  used on input line 281.
 (pdftex.def)             Requested size: 271.7835pt x 309.97244pt.
-[11 <./bulkless_graph.pdf>]
-<edge_weights.pdf, id=151, 730.73pt x 614.295pt>
+[12 <./bulkless_graph.pdf>]
+<edge_weights.pdf, id=189, 730.73pt x 614.295pt>
 File: edge_weights.pdf Graphic file (type pdf)
 <use edge_weights.pdf>
-Package pdftex.def Info: edge_weights.pdf  used on input line 310.
+Package pdftex.def Info: edge_weights.pdf  used on input line 298.
 (pdftex.def)             Requested size: 271.7835pt x 228.476pt.
- [12 <./chord_construct.pdf>]
+ [13 <./chord_construct.pdf>]
 
 pdfTeX warning: pdflatex (file ./harmonic.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<harmonic.pdf, id=168, 706.64pt x 614.295pt>
+<harmonic.pdf, id=206, 706.64pt x 614.295pt>
 File: harmonic.pdf Graphic file (type pdf)
 <use harmonic.pdf>
-Package pdftex.def Info: harmonic.pdf  used on input line 317.
+Package pdftex.def Info: harmonic.pdf  used on input line 305.
 (pdftex.def)             Requested size: 362.37569pt x 315.02037pt.
-[13 <./edge_weights.pdf> <./harmonic.pdf>]
-<dbrp_summed.pdf, id=209, 456.74641pt x 590.6567pt>
+[14 <./edge_weights.pdf> <./harmonic.pdf>]
+<dbrp_summed.pdf, id=246, 456.74641pt x 590.6567pt>
 File: dbrp_summed.pdf Graphic file (type pdf)
 <use dbrp_summed.pdf>
-Package pdftex.def Info: dbrp_summed.pdf  used on input line 327.
+Package pdftex.def Info: dbrp_summed.pdf  used on input line 315.
 (pdftex.def)             Requested size: 362.37569pt x 468.64154pt.
- [14 <./dbrp_summed.pdf>] [15] (./paper.aux)
+ [15 <./dbrp_summed.pdf>] [16] (./paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 41CE5F87EB64065431D0BEDC8384A33A;370.
+(rerunfilecheck)             Checksum: DB5F009F69335A824CC91588F6054C50;2223.
  ) 
 Here is how much of TeX's memory you used:
- 10170 strings out of 474116
- 157536 string characters out of 5743682
- 1935187 words of memory out of 5000000
- 32352 multiletter control sequences out of 15000+600000
+ 10181 strings out of 474116
+ 157720 string characters out of 5743682
+ 1936187 words of memory out of 5000000
+ 32361 multiletter control sequences out of 15000+600000
  568600 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,492b,629s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,638b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on paper.pdf (15 pages, 5019293 bytes).
+Output written on paper.pdf (16 pages, 5032144 bytes).
 PDF statistics:
- 519 PDF objects out of 1000 (max. 8388607)
- 363 compressed objects within 4 object streams
- 59 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 557 PDF objects out of 1000 (max. 8388607)
+ 400 compressed objects within 4 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 

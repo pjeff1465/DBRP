@@ -46,7 +46,7 @@
 
 %%%%%%%%%%%%%%%% 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Explanation of "Universe"}
-    \subsection*{AdS (Anti-de Sitter) Space $\Rightarrow$ The Bulk}
+    \subsection{AdS (Anti-de Sitter) Space $\Rightarrow$ The Bulk}
     \begin{itemize}
         \item The \textbf{bulk} represents a higher-dimensional space in the AdS/CFT framework.  
         \item A \textbf{surface} is a geometric object within AdS space that plays a crucial role in holography.  
@@ -54,7 +54,7 @@
         \item Since direct calculations in the bulk are challenging due to quantum gravity, computations are instead performed on the CFT boundary.  
     \end{itemize}
 
-    \subsection*{CFT (Conformal Field Theory) Space $\Rightarrow$ The Boundary}
+    \subsection{CFT (Conformal Field Theory) Space $\Rightarrow$ The Boundary}
     \begin{itemize}
         \item The \textbf{Boundary} represents a lower-dimensional space the forms "edge" or "boundary" of AdS bulk.
         \item \textbf{Non-gravitational} theory that lives on the boundary of the AdS spacetime.
@@ -65,86 +65,74 @@
     \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
         \centering
         \includegraphics[width=0.8\textwidth]{ads_cft.jpeg}  % Adjust width as needed
-        \caption{This illustration shows the AdS/ CFT spacetime. Where a geodesic is a straight line across the hyperbolic disk, which is the shortest path between points. In the context of anti-de Sitter spacetime a geodesic represents the path that a particle follows when only affected by gravity.}  % Caption text
-        \label{fig:example}  % Label for referencing
+        \caption{This illustration shows the AdS/CFT spacetime. Where a geodesic is a straight line across the hyperbolic disk, which is the shortest path between points. In the context of anti-de Sitter spacetime a geodesic represents the path that a particle follows when only affected by gravity.}  % Caption text
+        \label{fig:AdS/CFT space}  % Label for referencing
     \end{figure}
 
-    When dealing with a 5-dimensional AdS bulk, the boundary is typically 4-dimensional, and the CFT lives on this 4-dimensional boundary. This is the idea that the boundary is 1 less dimension that the bulk. 
-    The boundary is where we will make our computations. Because of the lack of gravity it is easier to compute and understand. We then can use the CFT computations to reconstruct the gravitational dynamics of the AdS bulk which translates to the geodesics of the hyperbolic disk. 
-    \subsubsection*{Quick Notes about AdS and CFT}
+]
+    \newpage
+    When dealing with a 5-dimensional AdS bulk, the boundary is typically 4-dimensional, and the CFT lives on this 4-dimensional boundary. 
+    This illustrates the idea that the boundary is one dimension less than the bulk. The boundary is where we will make our computations. Because of the lack of gravity, it is easier to compute and understand. We can then use the CFT computations to reconstruct the gravitational dynamics of the AdS bulk, which translates to the geodesics of the hyperbolic disk. Geodesics in AdS space are curved, unlike straight lines in flat geometry, even though they represent the shortest path between points. This curvature reflects the negative curvature of the AdS space and the effects of gravity.
+    These gravitational dynamics come from the entanglement entropy in the CFT. In AdS/CFT, entanglement entropy on the boundary CFT encodes information about the geometry of the bulk. Given a CFT state, we can determine the corresponding spacetime that the CFT describes, including its geometry and gravitational dynamics. This allows us to extract bulk information, such as spacetime curvature, directly from the boundary CFT state. Thus, we can use the CFT to reconstruct the AdS bulk.
+ 
+    \textbf{AdS/CFT correspondence} means that the gravitational theory in the bulk is equivalent to the non-gravitational CFT on the boundary. In other words, the two theories describe the same physics but from different perspectives, one being a gravitational theory and the other a quantum field theory without gravity. This is an extraordinary idea because it suggests that gravity can be understood in terms of a simpler quantum field theory on the boundary, offering insights into quantum gravity through non-gravitational methods.
+
+    \subsection{Holographic Principle}
+    The \textbf{Holographic Principle} is central to the AdS/CFT correspondence.  It states that a lower-dimensional, non-gravitational theory (CFT) can fully describe the physics of a higher-dimensional gravitational theory (AdS). More formally, this principle suggests that the physics within a region of space can be described by a theory defined on the boundary of that region, with no need for the bulk to be independently described.
+    \\ 
+    This discovery is important because it suggests that quantum gravity, which typically involves understanding the behavior of spacetime and gravity in the bulk, can be described by a simpler theory on the boundary. In this context, we don't need to deal directly with quantum gravity in the bulk; instead, we can use quantum field theory on the boundary, which does not involve gravity. This provides a new framework for studying gravitational phenomena without having to directly engage with the complexities of quantum gravity.    \\
+    \\
+    \textbf{Holographic Relationship} means that everything happening in the bulk AdS spacetime can be described by the boundary CFT, and vice versa. The idea is that the bulk gravitational dynamics are encoded in the CFT through entanglement and other quantum information properties, while the CFT state encapsulates all the physics of the bulk region.
+    \\
+    Holographic Relationship consists of two theories:
     \begin{itemize}
-        \item DBRP idea in physic terms:
-        \begin{itemize}
-            \item Because the CFT is a non-gravitational theory, it is easier to make computations and to understand. And because it lives on the boundary of the AdS space, we can use the CFT to reconstruct the gravitational dynamics of the AdS bulk.
-            \item Given a CFT state, we can determine the corresponding spacetime that the CFT describes, including its geometry and gravitational dynamics.
-            \item Then we can use entanglement entropy in the CFT to learn about spacetime geometry in the bulk.
-        \end{itemize}
+        \item A theory of quantum gravity (the AdS bulk) and a quantum field theory without gravity (the CFT boundary). The relationship between the two theories is called "holographic," which is where the term "holographic relationship" comes from.
+        \item Note: The equivalence of these theories is still a subject of ongoing research and has not yet been fully proven in all generalities. The mapping between the two theories has yet to be completely developed, and much of the work involves finding more specific correspondences between the two
     \end{itemize}
 
-    \subsection*{AdS/CFT}
-    \begin{itemize}
-        \item \textbf{AdS/CFT correspondence} $\Rightarrow$ The gravitational theory in the bulk is equivalent to the non-gravitational CFT on the boundary
-        \item i.e. Two theories describe the same physics, but from different perspectives
-        \item \textbf{Holographic Relationship}: Everything happening in the bulk AdS spacetime can be described by the boundary CFT, and vice versa
-        \item Consists of two theories (theory of quantum gravity and a quantum field theory, with no gravity). The relation between the two theories is called "holographic".
-        \item Theories are "equivalent"? (yet to be proven)
-        \item Meaning, there exists a mapping or "dictionary" that maps all states and observables from one theory to corresponding states and observables in the other
-        \item Currently lack a full dictionary for the AdS side
-    \end{itemize}
-
-    \subsubsection*{Quick note about spacetime geometry (physics)}
-    \begin{itemize}
-        \item Gravity is a curvature of spacetime (caused by mass and energy)
-        \item "Geometry" of spacetime refers to this curve:
-        \begin{itemize}
-            \item If no gravity, geometry is simple and uncurved
-        \end{itemize}
-    \end{itemize}
-
-    \subsubsection*{Spacetime Geometry for AdS/CFT}
-    \begin{itemize}
-        \item In AdS space, geometry is negatively curved.
-        \item \textbf{CFT can reconstruct the geometry of AdS bulk}: Meaning, data in the CFT can be used to determine how spacetime is shaped or curved in the AdS bulk.
-        \item \textbf{Entanglement is directly related to geometry of the bulk spacetime}: 
-        \begin{itemize}
+    A holographic relationship means there exists a mapping or "dictionary" that maps all states and observables from one theory to a corresponding state and observable in the other. For example, bulk field configurations map to boundary operators, and bulk entanglement corresponds to boundary entanglement entropy. Currently, we lack a full dictionary for the AdS side, and researchers are actively working to establish more complete mappings and further validate the holographic principle.
+    
+    \subsection{Spacetime geometry and what it means in AdS/CFT space}
+        \hspace{.5cm} Gravity is a curvature of spacetime caused by mass and energy. "geometry" of spacetime refers to this curve. If there is no gravity geometry is simple and uncurved.
+        \\
+        \indent In AdS space, geometry is negatively curved. This is because of the nature of its spacetime structure. This leads to a spacetime geometry that is "hyperbolic" in nature, meaning that it has a negative curvature at every point.
+        \textbf{The CFT can reconstruct the geometry of AdS bulk}, meaning that data from the CFT can be used to determine the shape or curvature of spacetime in the AdS bulk.
+        \\
+        \\
+        \textbf{Entanglement is directly related to geometry of the bulk spacetime}:
+        \begin{enumerate}
             \item Amount of entanglement in different regions of CFT tells us about structure and curvature of the corresponding bulk spacetime in AdS.
             \item More entanglement on the boundary implies more curvature or structure in the bulk geometry.
             \item Proven with RT formula: more entanglement = larger minimal surface area = more curved and intricate bulk geometry.
-        \end{itemize}
-    \end{itemize}
+        \end{enumerate}
 
-    \subsubsection*{Why important?}
+
+    \subsection{Why is this important?}
+        \hspace{.5cm} The shape of spacetime tells us how gravity behaves. If we can reconstruct the bulk geometry from the CFT< we can gain insights intot he quantum aspects of gravity and understand how measurements (or experiments) on the boundary affect the information encoded in the bulk.
+
+\section{RT formula and Holographic Dictionary}
+        \hspace{.5cm} It is important to note that there is no need to calculate the entanglement between subsystems. DBRP initially states full AdS/CFT correspondence.
+
+    \subsubsection{Von Neumann entropy}
+        \hspace{0.5cm} Refers to a measure of quantum entanglement, i.e., information contained in a specific region (usually in lower-dimensional CFT). But again, this measurement is not needed for DBRP because it is already defined in the problem initialization.
+
+    \subsubsection{Ryu-Takayanagi (RT)}
+        \hspace{0.5cm} Key entry in holographic dictionary is \textit{Ryu-Takayanagi (RT) formula}. Where the hologarphic dictionary refers to the correspondence values between the AdS/CFT space.
+        \\
+        Equates von Neumann entropy of subregion of boundary state with the minimal area among all bulk surfaces that end on that boundary region.
+        \\
+        Meaning: Entropy (amount of quantum information) in a certain part of the boundary is tied to the area of the smallest surface that stretches into the bulk but connects to that boundary (geometrical way of understanding quantum entanglement).
+
+
+    \subsubsection*{Minimal area of bulk surface}
     \begin{itemize}
-        \item Shape of spacetime tells us how gravity behaves.
-        \item If we can reconstruct the bulk geometry from the CFT, we can gain insights into the quantum aspects of gravity and understand how measurements (or experiments) on the boundary affect the information encoded in the bulk.
+        \item In higher-dimensional bulk space (AdS) exists a surface whose area corresponds to entanglement in boundary region.
+        \item Theory says: Smallest possible area of this surface (RT surface) is proportional to entropy of boundary subregion.
+        \item Meaning: If you can find RT, you know the entropy (or information) of the subregion inside the boundary.
+        \item The more entangled the boundary region is, the larger the area of corresponding surface in the AdS bulk.
     \end{itemize}
 
-\subsection*{Entanglement Measurements}
-\begin{itemize}
-    \item Not needed for DBRP because problem states initially given full AdS/CFT correspondence.
-\end{itemize}
-
-\subsubsection*{Von Neumann entropy}
-\begin{itemize}
-    \item Refers to a measure of quantum entanglement, i.e., information contained in a specific region (usually in lower-dimensional CFT).
-\end{itemize}
-
-\subsubsection*{Ryu-Takayanagi (RT) Formula and Holographic Dictionary}
-\begin{itemize}
-    \item Key entry in holographic dictionary is \textit{Ryu-Takayanagi (RT) formula}.
-    \item Equates von Neumann entropy of subregion of boundary state with the minimal area among all bulk surfaces that end on that boundary region.
-    \item Meaning: Entropy (amount of quantum information) in a certain part of the boundary is tied to the area of the smallest surface that stretches into the bulk but connects to that boundary (geometrical way of understanding quantum entanglement).
-\end{itemize}
-
-\subsubsection*{Minimal area of bulk surface}
-\begin{itemize}
-    \item In higher-dimensional bulk space (AdS) exists a surface whose area corresponds to entanglement in boundary region.
-    \item Theory says: Smallest possible area of this surface (RT surface) is proportional to entropy of boundary subregion.
-    \item Meaning: If you can find RT, you know the entropy (or information) of the subregion inside the boundary.
-    \item The more entangled the boundary region is, the larger the area of corresponding surface in the AdS bulk.
-\end{itemize}
-
-\textbf{RT surface is proportional to von Neumann entropy which quantifies quantum entanglement or information of subregion.}
+    \textbf{RT surface is proportional to von Neumann entropy which quantifies quantum entanglement or information of subregion.}
 
 \section*{Discrete Bulk Reconstruction Problem}
 Official statement initialization:
