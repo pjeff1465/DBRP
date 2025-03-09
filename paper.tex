@@ -45,7 +45,7 @@
     \indent By leveraging insights from AdS/CFT, DBRP offers a discrete, graph-based approach to bulk reconstruction, which allows for a new perspective on how spacetime emerges from entanglement, with potential applications in both holography and quantum information theory.
 
 %%%%%%%%%%%%%%%% 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Explanation of "Universe"}
+%%%%%%%%%%%%%% All about AdS/ CFT space %%%%%%%%%%%%%%%%%%%%%%%%
     \subsection{AdS (Anti-de Sitter) Space $\Rightarrow$ The Bulk}
         \begin{itemize}
             \item The \textbf{bulk} represents a higher-dimensional space in the AdS/CFT framework.  
@@ -106,6 +106,8 @@
     \subsection{Why Is This Important?}
         \hspace{0.5cm} The shape of spacetime tells us how gravity behaves. If we can reconstruct the bulk geometry from the CFT, we can gain insights into the quantum aspects of gravity and understand how measurements (or experiments) on the boundary affect the information encoded in the bulk. This could lead to a deeper understanding of quantum gravity and its connection to quantum field theory.
 
+%%%%%%%%%%%%%%%%%%% 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% RT formula %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{RT formula and Holographic Dictionary}
         \hspace{.5cm} It is important to note that there is no need to calculate the entanglement between subsystems. DBRP initially states full AdS/CFT correspondence.
 
@@ -113,16 +115,17 @@
         \hspace{0.5cm} Refers to a measure of quantum entanglement, i.e., information contained in a specific region (usually in lower-dimensional CFT). But again, this measurement is not needed for DBRP because it is already defined in the problem initialization.
 
     \subsubsection{Ryu-Takayanagi (RT)}
-        \hspace{0.5cm} Key entry in holographic dictionary is \textit{Ryu-Takayanagi (RT) formula}. Where the hologarphic dictionary refers to the correspondence values between the AdS/CFT space.
+        \hspace{0.5cm} A key entry in holographic dictionary is \textit{Ryu-Takayanagi (RT) formula}. The hologarphic dictionary refers to the correspondence values between the AdS/CFT space.
         \\
         Equates von Neumann entropy of subregion of boundary state with the minimal area among all bulk surfaces that end on that boundary region.
         \\
         Meaning: Entropy (amount of quantum information) in a certain part of the boundary is tied to the area of the smallest surface that stretches into the bulk but connects to that boundary (geometrical way of understanding quantum entanglement).
-
+        \\
+        If you know what the minimal area of a subsystem is you know the entanglement entropy of said subsystem with the rest of the system. Therefore, you know the amount of quantum information in subsystem.
 
     \subsubsection*{Minimal area of bulk surface}
     \begin{itemize}
-        \item In higher-dimensional bulk space (AdS) exists a surface whose area corresponds to entanglement in boundary region.
+        \item In the higher-dimensional bulk space (AdS) there exists a surface whose area corresponds to entanglement in boundary region.
         \item Theory says: Smallest possible area of this surface (RT surface) is proportional to entropy of boundary subregion.
         \item Meaning: If you can find RT, you know the entropy (or information) of the subregion inside the boundary.
         \item The more entangled the boundary region is, the larger the area of corresponding surface in the AdS bulk.
@@ -130,21 +133,15 @@
 
     \textbf{RT surface is proportional to von Neumann entropy which quantifies quantum entanglement or information of subregion.}
 
-\section*{Discrete Bulk Reconstruction Problem}
-Official statement initialization:
-\[
-\mathcal{H} = \otimes^{N}_{i=1}\mathcal{H}_{i}
-\]
-\begin{quote}
-    Note about tensor product, Hilbert space, and qubits:
-\end{quote}
-\begin{itemize}
-    \item Tensor Product is a mathematical operation used to describe a system with multiple qubits. It combines two or more Hilbert spaces into a single composite Hilbert space, or one large vector space. The larger space captures the full state space of the combined quantum system.
-    \item For a single qubit: $|0\rangle$, $|1\rangle$ form a basis for a two-dimensional Hilbert space.
-    \item Therefore, an $n$-qubit system has a Hilbert space of dimension $2^n$.
-\end{itemize}
-
-\subsubsection*{Min-Cut Theory}
+%%%%%%%%%%%%%%%%% DBRP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Discrete Bulk Reconstruction Problem}
+\subsection{Background Information}
+\textbf{Tensor Product} is a mathematical operation used to describe a system with multiple qubits. It combines two or more Hilbert spaces into a single composite Hilbert space, or one large vector space. The larger space captures the full state space of the combined quantum system.
+\\
+The \textbf{Hilbert space} for a single qubit forms a 2-dimensional basis: $|0\rangle$, $|1\rangle$
+\\ For a single qubit the dimension is 2 because for a single qubit there are two possibles states ($|0\rangle$, $|1\rangle$)
+\\ Therefore, for n-qubit system, the Hilbert space will have a total of $2^n$ dimensions, and any state of the system can be written as a linear combination of all these basis states.
+\subsubsection{Min-Cut Theory}
 \begin{itemize}
     \item Feature of AdS/CFT.
     \item Given a finite weighted undirected graph \( G \) with real edge weights \( w(e) \geq 0 \), as well as two disjoint vertices \( R, R' \), a min-cut is a set \( C \) of edges with minimum total weight
@@ -154,17 +151,23 @@ Official statement initialization:
     whose removal disconnects \( R \) from \( R' \).
 \end{itemize}
 
-\section*{Problem Set-Up}
+\subsection{Problem Initalization}
+Start with Hilbert space for each N atomic boundary regions:
+\[
+\mathcal{H} = \otimes^{N}_{i=1}\mathcal{H}_{i}
+\]
+
 Can model the bulk by a weighted undirected graph where each subregion is an RT (or minimal area) surface, which corresponds to min-cuts in \( G \).
 
 \begin{center}
     \includegraphics[width=0.8\textwidth]{min_cut_graph.pdf}
 \end{center}
 
-\subsection*{Official Statement}
+\subsection{Official Problem Statement}
 Given as input a list of atomic boundary regions labeled \( 1, \dots, N \), a list of subsets of the regions \( R_1, \dots, R_k \subseteq [N] \), and a real-valued entropy \( S(R_i) \geq 0 \) for each \( R_i \), the weight of the minimum cut separating \( R_i \) from the rest of the boundary vertices (i.e., from \( [N] - R_i \)) is equal to \( S(R_i) \).
 
-\subsection*{General Idea}
+
+\subsection{General Idea}
 If we are given the complete entanglement structure of the boundary, we are therefore provided with a min-cut graph of the boundary entropies. We can then perform an experiment in the bulk space and use min-cut theory on the boundary to reconstruct the entropy graph. Giving us an interpretation of what the outcome would be in the bulk, because the boundary information is encoded in the bulk.
 
 \textbf{This is basically the inverse min-cut problem.} Now we are given min-cut, find graph that gave you min-cut solution, therefore this graph is not unique. While the graph is not unique you can add on additional properties. For example, planar, few vertices. For this problem assume no wormholes. For DBRP to work we need to make ensure all quantum states satisfies properties (more on that later). \\

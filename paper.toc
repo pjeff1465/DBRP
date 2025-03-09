@@ -1,11 +1,16 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {section}{\numberline {2}Explanation of "Universe"}{3}{section.2}%
-\contentsline {subsection}{\numberline {2.1}AdS (Anti-de Sitter) Space $\Rightarrow $ The Bulk}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}CFT (Conformal Field Theory) Space $\Rightarrow $ The Boundary}{3}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Holographic Principle}{4}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Spacetime Geometry and What It Means in AdS/CFT Space}{5}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Why Is This Important?}{6}{subsection.2.5}%
-\contentsline {section}{\numberline {3}RT formula and Holographic Dictionary}{6}{section.3}%
-\contentsline {subsubsection}{\numberline {3.0.1}Von Neumann entropy}{6}{subsubsection.3.0.1}%
-\contentsline {subsubsection}{\numberline {3.0.2}Ryu-Takayanagi (RT)}{6}{subsubsection.3.0.2}%
+\contentsline {subsection}{\numberline {1.1}AdS (Anti-de Sitter) Space $\Rightarrow $ The Bulk}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}CFT (Conformal Field Theory) Space $\Rightarrow $ The Boundary}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Holographic Principle}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Spacetime Geometry and What It Means in AdS/CFT Space}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Why Is This Important?}{6}{subsection.1.5}%
+\contentsline {section}{\numberline {2}RT formula and Holographic Dictionary}{6}{section.2}%
+\contentsline {subsubsection}{\numberline {2.0.1}Von Neumann entropy}{6}{subsubsection.2.0.1}%
+\contentsline {subsubsection}{\numberline {2.0.2}Ryu-Takayanagi (RT)}{6}{subsubsection.2.0.2}%
+\contentsline {section}{\numberline {3}Discrete Bulk Reconstruction Problem}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Background Information}{7}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Min-Cut Theory}{7}{subsubsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.2}Problem Initalization}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Official Problem Statement}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}General Idea}{8}{subsection.3.4}%
 \contentsline {section}{\numberline {4}Conclusion}{15}{section.4}%
