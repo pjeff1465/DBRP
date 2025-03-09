@@ -159,9 +159,14 @@ Start with Hilbert space for each N atomic boundary regions:
 
 Can model the bulk by a weighted undirected graph where each subregion is an RT (or minimal area) surface, which corresponds to min-cuts in \( G \).
 
-\begin{center}
-    \includegraphics[width=0.8\textwidth]{min_cut_graph.pdf}
-\end{center}
+\begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
+    \centering
+    \includegraphics[width=0.6\textwidth, height=0.23\textheight]{mincut_graph.jpeg}  % Adjust width as needed
+    \caption{5 atomic region weighted undirected graph model of the bulk. Where each subregion is cutting deeper into the bulk. Each subregion is a minimal surface (RT surface) and is connected by the min-cut (red) line.}  % Caption text
+    \label{fig:mincut}  % Label for referencing
+\end{figure}
+
+\newpage 
 
 \subsection{Official Problem Statement}
 Given as input a list of atomic boundary regions labeled \( 1, \dots, N \), a list of subsets of the regions \( R_1, \dots, R_k \subseteq [N] \), and a real-valued entropy \( S(R_i) \geq 0 \) for each \( R_i \), the weight of the minimum cut separating \( R_i \) from the rest of the boundary vertices (i.e., from \( [N] - R_i \)) is equal to \( S(R_i) \).

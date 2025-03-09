@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1741478590.03753 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1741478591.31192 0
-  "/Users/admin/Desktop/research/DBRP/paper.tex" 1741478588.49805 22214 73e6333c5e47bdd97963c6c5ea0d3639 ""
+["pdflatex"] 1741479072.8812 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1741479074.14494 0
+  "/Users/admin/Desktop/research/DBRP/paper.tex" 1741479071.24836 22632 d621a6064eec92e7fbd290186ef4ab65 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -102,11 +102,11 @@
   "dbrp_summed.pdf" 1741309176 1764173 41206e939525a7d98d1f770e40007e9e ""
   "edge_weights.pdf" 1741309042 327741 293416cbffbc86cf6c1d573b4a0b2821 ""
   "harmonic.pdf" 1741309075 476426 66d1e804773cfbe2eefa6bb5663ba194 ""
-  "min_cut_graph.pdf" 1741307264 505352 320635a9a0f8627b5f12b158d129cdef ""
-  "paper.aux" 1741478591.18686 3349 4e8030aff1c480dca82c2129f386be3d "pdflatex"
-  "paper.out" 1741478591.18798 3074 a2f34befc8cb15a59653b3a563c0c870 "pdflatex"
-  "paper.tex" 1741478588.49805 22214 73e6333c5e47bdd97963c6c5ea0d3639 ""
-  "paper.toc" 1741478591.1883 1483 f9742c8feb4790ed3463f34f85688a79 "pdflatex"
+  "mincut_graph.jpeg" 1741478689.4985 427735 b928d4231a6c5a5a6a1209bc72eb1ca9 ""
+  "paper.aux" 1741479074.01918 3917 4444f36d76ae75aa9bc3fe7af961a9c6 "pdflatex"
+  "paper.out" 1741479074.02027 3074 a2f34befc8cb15a59653b3a563c0c870 "pdflatex"
+  "paper.tex" 1741479071.24836 22632 d621a6064eec92e7fbd290186ef4ab65 ""
+  "paper.toc" 1741479074.02059 1483 ef25bc01f47508989fcc5b3665671d3a "pdflatex"
   "parts.pdf" 1741308960 57021 8f8bdec36d132b8a6bedcc3466511ec7 ""
   "strong_subaddivity.png" 1741308894.57991 97913 fa9465a79cf284922b2be21a7da5c227 ""
   "subaddivity.png" 1741308888.78437 141420 780b3a9aba6c15f2e6b8ffda14b93999 ""
