@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  12 MAR 2025 12:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  12 MAR 2025 12:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -399,11 +399,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--182
 
  []
 
-<vertex_subregions.jpeg, id=157, 1393.205pt x 397.485pt>
+<vertex_subregions.jpeg, id=157, 1138.2525pt x 336.25626pt>
 File: vertex_subregions.jpeg Graphic file (type jpg)
 <use vertex_subregions.jpeg>
 Package pdftex.def Info: vertex_subregions.jpeg  used on input line 196.
-(pdftex.def)             Requested size: 452.9679pt x 129.22961pt.
+(pdftex.def)             Requested size: 452.9679pt x 133.81258pt.
 [8]
 <subaddivity.png, id=163, 708.6475pt x 315.1775pt>
 File: subaddivity.png Graphic file (type png)
@@ -472,7 +472,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,750b,658s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on paper.pdf (16 pages, 4918636 bytes).
+Output written on paper.pdf (16 pages, 4890534 bytes).
 PDF statistics:
  583 PDF objects out of 1000 (max. 8388607)
  429 compressed objects within 5 object streams
