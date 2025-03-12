@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1741794589.41842 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1741794590.7547 0
-  "/Users/admin/Desktop/research/DBRP/paper.tex" 1741794589.19393 23097 35d184d0bb6629bc1648d1673e2e10d4 ""
+["pdflatex"] 1741799942.67094 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1741799943.88086 0
+  "/Users/admin/Desktop/research/DBRP/paper.tex" 1741799941.17151 23700 f43a0652b000c2cffc65a5ff8c63d0c2 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -103,14 +103,14 @@
   "edge_weights.pdf" 1741309042 327741 293416cbffbc86cf6c1d573b4a0b2821 ""
   "harmonic.pdf" 1741309075 476426 66d1e804773cfbe2eefa6bb5663ba194 ""
   "mincut_graph.jpeg" 1741478689.4985 427735 b928d4231a6c5a5a6a1209bc72eb1ca9 ""
-  "paper.aux" 1741794590.61444 4171 942a4d3ed061597489d9559a59795344 "pdflatex"
-  "paper.out" 1741794590.61589 3359 58ec981e1711819fbbf7f47e1d497f6c "pdflatex"
-  "paper.tex" 1741794589.19393 23097 35d184d0bb6629bc1648d1673e2e10d4 ""
-  "paper.toc" 1741794590.61625 1655 746e0218c53fe2d1a42b0eeb4eca1075 "pdflatex"
+  "paper.aux" 1741799943.7398 5410 aade60d583b5b14e1691c4d146cf3ee8 "pdflatex"
+  "paper.out" 1741799943.7412 3685 328ffd854ace1f5e00cec2783c31de75 "pdflatex"
+  "paper.tex" 1741799941.17151 23700 f43a0652b000c2cffc65a5ff8c63d0c2 ""
+  "paper.toc" 1741799943.74262 1820 62cf43f9e7f94a56d4e798b497739bf0 "pdflatex"
   "parts.pdf" 1741308960 57021 8f8bdec36d132b8a6bedcc3466511ec7 ""
   "strong_subaddivity.png" 1741308894.57991 97913 fa9465a79cf284922b2be21a7da5c227 ""
   "subaddivity.png" 1741308888.78437 141420 780b3a9aba6c15f2e6b8ffda14b93999 ""
-  "vertex_subregions.jpeg" 1741794576.76298 135782 dce3629c6b2c10fcb549da4f0b9476e3 ""
+  "vertex_subregions.jpeg" 1741799389.57764 197940 3de33336274589c019644b619bc44cad ""
   (generated)
   "paper.aux"
   "paper.log"

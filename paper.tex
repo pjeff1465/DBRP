@@ -173,7 +173,7 @@ Can model the bulk by a weighted undirected graph where each subregion is an RT 
 
 
 \subsection{General Idea}
-\hspace{0.5cm} If we are given the complete entanglement structure of the boundary, we are therefore provided with a min-cut graph of the boundary entropies. We can then perform an experiment in the bulk space and use min-cut theory on the boundary to reconstruct the entropy graph. Giving us an interpretation of what the outcome would be in the bulk, because the boundary information is encoded in the bulk.
+\hspace{0.5cm} If we are given the comsplete entanglement structure of the boundary, we are therefore provided with a min-cut graph of the boundary entropies. We can then perform an experiment in the bulk space and use min-cut theory on the boundary to reconstruct the entropy graph. Giving us an interpretation of what the outcome would be in the bulk, because the boundary information is encoded in the bulk.
 
 \textbf{This is basically the inverse min-cut problem.} Now we are given min-cut, find graph that gave you min-cut solution, therefore this graph is not unique. While the graph is not unique you can add on additional properties. For example, planar, few vertices. For this problem assume no wormholes. For DBRP to work we need to ensure all quantum states satisfies properties (more on that later). \\
 \\
@@ -187,15 +187,18 @@ Therefore, we will prove DBRP has an upper bound of $2^{2^N}$.
 \subsection{Upper Bound Proof}
 Given $K\leq2^N$ boundary regions form all $\leq2^N$ possible intersections of RT regions. At most 1 vertex needed in each region. Using linear programs to determine edge weight takes "only" exp(exp(exp(N))) time!
 
-\begin{center}
-    \includegraphics[width=0.8\textwidth]{vertex_subregions.jpeg}
-\end{center}
-
-\subsection*{How to determine edge weights?}
+\subsection{Determining Edge Weights}
 Use linear programming, for every possibility of what min-cuts could be try to solve some linear equations and equalities. Can we set edge weights so that it will be min-cut?
 \\Therefore, gives us algo for deciding any instance of DBRP.
 
-\section*{Required Properties}
+\begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
+    \centering
+    \includegraphics[width=\textwidth]{vertex_subregions.jpeg}  % Adjust width as needed
+    \caption{This illustration shows cuts for single subregions of a system. This does not address the challenges of DBRP about finding a set of edge weights such that ALL possible min-cuts match ALL given boundary entropies simultaneously. Therefore, in order to show min-cuts and edge weights for S(ABC), S(ADB), etc. We will have to implement properties in order to make sure our solution for each subregion is accurate.}  % Caption text
+    \label{fig:single subregion min-cut}  % Label for referencing
+\end{figure}
+\newpage 
+\section{Required Properties}
 To ensure a solution exists we \textbf{need} the following properties:
 
 \begin{enumerate}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  12 MAR 2025 10:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  12 MAR 2025 12:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -373,7 +373,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 57.
 
-<ads_cft.jpeg, id=110, 1217.54875pt x 779.91376pt>
+<ads_cft.jpeg, id=120, 1217.54875pt x 779.91376pt>
 File: ads_cft.jpeg Graphic file (type jpg)
 <use ads_cft.jpeg>
 Package pdftex.def Info: ads_cft.jpeg  used on input line 67.
@@ -389,7 +389,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 114.
 
 [6]
-<mincut_graph.jpeg, id=134, 1288.815pt x 901.3675pt>
+<mincut_graph.jpeg, id=144, 1288.815pt x 901.3675pt>
 File: mincut_graph.jpeg Graphic file (type jpg)
 <use mincut_graph.jpeg>
 Package pdftex.def Info: mincut_graph.jpeg  used on input line 164.
@@ -399,83 +399,83 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--182
 
  []
 
-<vertex_subregions.jpeg, id=146, 1112.155pt x 356.33125pt>
+<vertex_subregions.jpeg, id=157, 1393.205pt x 397.485pt>
 File: vertex_subregions.jpeg Graphic file (type jpg)
 <use vertex_subregions.jpeg>
-Package pdftex.def Info: vertex_subregions.jpeg  used on input line 191.
-(pdftex.def)             Requested size: 362.37569pt x 116.10532pt.
-[8 <./vertex_subregions.jpeg>]
-<subaddivity.png, id=154, 708.6475pt x 315.1775pt>
+Package pdftex.def Info: vertex_subregions.jpeg  used on input line 196.
+(pdftex.def)             Requested size: 452.9679pt x 129.22961pt.
+[8]
+<subaddivity.png, id=163, 708.6475pt x 315.1775pt>
 File: subaddivity.png Graphic file (type png)
 <use subaddivity.png>
-Package pdftex.def Info: subaddivity.png  used on input line 207.
+Package pdftex.def Info: subaddivity.png  used on input line 210.
 (pdftex.def)             Requested size: 423.5932pt x 188.401pt.
-<strong_subaddivity.png, id=156, 673.51625pt x 254.9525pt>
+<strong_subaddivity.png, id=165, 673.51625pt x 254.9525pt>
 File: strong_subaddivity.png Graphic file (type png)
 <use strong_subaddivity.png>
-Package pdftex.def Info: strong_subaddivity.png  used on input line 215.
+Package pdftex.def Info: strong_subaddivity.png  used on input line 218.
 (pdftex.def)             Requested size: 362.37569pt x 137.17433pt.
- [9 <./subaddivity.png> <./strong_subaddivity.png>]
-<parts.pdf, id=167, 794.97pt x 533.995pt>
+ [9 <./vertex_subregions.jpeg> <./subaddivity.png>]
+<parts.pdf, id=174, 794.97pt x 533.995pt>
 File: parts.pdf Graphic file (type pdf)
 <use parts.pdf>
-Package pdftex.def Info: parts.pdf  used on input line 255.
+Package pdftex.def Info: parts.pdf  used on input line 258.
 (pdftex.def)             Requested size: 362.37569pt x 243.41624pt.
- [10 <./parts.pdf>]
-<bulkless_graph.pdf, id=185, 652.4375pt x 614.295pt>
+ [10 <./strong_subaddivity.png>]
+<bulkless_graph.pdf, id=186, 652.4375pt x 614.295pt>
 File: bulkless_graph.pdf Graphic file (type pdf)
 <use bulkless_graph.pdf>
-Package pdftex.def Info: bulkless_graph.pdf  used on input line 276.
+Package pdftex.def Info: bulkless_graph.pdf  used on input line 279.
 (pdftex.def)             Requested size: 271.7835pt x 255.9025pt.
-
+ [11 <./parts.pdf>]
 
 pdfTeX warning: pdflatex (file ./chord_construct.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<chord_construct.pdf, id=186, 614.295pt x 700.6175pt>
+<chord_construct.pdf, id=201, 614.295pt x 700.6175pt>
 File: chord_construct.pdf Graphic file (type pdf)
 <use chord_construct.pdf>
-Package pdftex.def Info: chord_construct.pdf  used on input line 290.
+Package pdftex.def Info: chord_construct.pdf  used on input line 293.
 (pdftex.def)             Requested size: 271.7835pt x 309.97244pt.
-[11 <./bulkless_graph.pdf>]
-<edge_weights.pdf, id=201, 730.73pt x 614.295pt>
+[12 <./bulkless_graph.pdf>]
+<edge_weights.pdf, id=214, 730.73pt x 614.295pt>
 File: edge_weights.pdf Graphic file (type pdf)
 <use edge_weights.pdf>
-Package pdftex.def Info: edge_weights.pdf  used on input line 307.
+Package pdftex.def Info: edge_weights.pdf  used on input line 310.
 (pdftex.def)             Requested size: 271.7835pt x 228.476pt.
- [12 <./chord_construct.pdf>]
+ [13 <./chord_construct.pdf>]
 
 pdfTeX warning: pdflatex (file ./harmonic.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<harmonic.pdf, id=217, 706.64pt x 614.295pt>
+<harmonic.pdf, id=231, 706.64pt x 614.295pt>
 File: harmonic.pdf Graphic file (type pdf)
 <use harmonic.pdf>
-Package pdftex.def Info: harmonic.pdf  used on input line 314.
+Package pdftex.def Info: harmonic.pdf  used on input line 317.
 (pdftex.def)             Requested size: 362.37569pt x 315.02037pt.
-[13 <./edge_weights.pdf> <./harmonic.pdf>]
-<dbrp_summed.pdf, id=258, 456.74641pt x 590.6567pt>
+[14 <./edge_weights.pdf> <./harmonic.pdf>]
+<dbrp_summed.pdf, id=271, 456.74641pt x 590.6567pt>
 File: dbrp_summed.pdf Graphic file (type pdf)
 <use dbrp_summed.pdf>
-Package pdftex.def Info: dbrp_summed.pdf  used on input line 324.
+Package pdftex.def Info: dbrp_summed.pdf  used on input line 327.
 (pdftex.def)             Requested size: 362.37569pt x 468.64154pt.
- [14 <./dbrp_summed.pdf>] [15] (./paper.aux)
+ [15 <./dbrp_summed.pdf>] [16] (./paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 58EC981E1711819FBBF7F47E1D497F6C;3359.
+(rerunfilecheck)             Checksum: 328FFD854ACE1F5E00CEC2783C31DE75;3685.
  ) 
 Here is how much of TeX's memory you used:
- 10188 strings out of 474116
- 157875 string characters out of 5743682
+ 10193 strings out of 474116
+ 157948 string characters out of 5743682
  1936187 words of memory out of 5000000
- 32367 multiletter control sequences out of 15000+600000
+ 32370 multiletter control sequences out of 15000+600000
  568600 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,750b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,750b,658s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on paper.pdf (15 pages, 4855279 bytes).
+Output written on paper.pdf (16 pages, 4918636 bytes).
 PDF statistics:
- 570 PDF objects out of 1000 (max. 8388607)
- 417 compressed objects within 5 object streams
- 62 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 583 PDF objects out of 1000 (max. 8388607)
+ 429 compressed objects within 5 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 
