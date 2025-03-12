@@ -203,21 +203,31 @@ To ensure a solution exists where all possible min-cuts match all given boundary
 
 \begin{enumerate}
     \item \textbf{Subadditivity (SA)}: Entropy of combined system is at most the sum of information in the individual components.
-    This property ensures redundancy exists when storing information across multiple locations. Meaning, potential information overlaps between components, which ensures recovery mechanisms.
+    This property ensures redundancy exists when storing information across multiple locations. This means potential information overlaps between components, which ensures recovery mechanisms.
     \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
         \centering
         \includegraphics[width=\textwidth]{subadditivity.jpeg}  % Adjust width as needed
         \caption{The red line value has to be less than or equal to the sum of orange line values in order to ensure subadditivity.}  % Caption text
         \label{fig:Subadditivity}  % Label for referencing
     \end{figure}
-    
-    \item \textbf{Strong Subadditivity (SSA)}
-    \[
-    S(AB) + S(BC) \geq S(B) + S(ABC)
-    \]
-    \begin{center}
-        \includegraphics[width=0.8\textwidth]{strong_subaddivity.png}
-    \end{center}
+    \\
+    We can illustrate this property on our example from above (Fig. 3).
+    \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
+        \centering
+        \includegraphics[width=\textwidth]{SA_ex.jpeg}  % Adjust width as needed
+        \caption{In this example property 1 holds. Therefore edge weight for AB is valid!}  % Caption text
+        \label{fig:Subadditivity Example}  % Label for referencing
+    \end{figure}
+
+    \newpage
+
+    \item \textbf{Strong Subadditivity (SSA)}: This property extends the concepts of SA to three or more subregions. This property ensures that information overlap exists across three or more components.
+    \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
+        \centering
+        \includegraphics[width=\textwidth]{SSA.jpeg}  % Adjust width as needed
+        \caption{This illustration demonstrates Strong Subadditivity (SSA) on boundary/bulk entropy relationships. In order for the entropy of the ABC subregion to be valid, the sum of entropies S(ABC) + S(B) must be less than or equal to the sum of entropies S(AB) + S(BC).}  % Caption text
+        \label{fig:SSA}  % Label for referencing
+    \end{figure}
 \end{enumerate}
 
 \section*{Holographic Quantum State}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  12 MAR 2025 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  12 MAR 2025 13:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -278,7 +278,6 @@ LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 Package hyperref Info: Link coloring OFF on input line 19.
- (./paper.out) (./paper.out)
 \@outlinefile=\write3
 \openout3 = `paper.out'.
 
@@ -344,11 +343,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./paper.toc)
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+No file paper.toc.
 \tf@toc=\write4
 \openout4 = `paper.toc'.
 
- [2]
+[2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 49.
@@ -373,7 +373,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 57.
 
-<ads_cft.jpeg, id=120, 1217.54875pt x 779.91376pt>
+<ads_cft.jpeg, id=19, 1217.54875pt x 779.91376pt>
 File: ads_cft.jpeg Graphic file (type jpg)
 <use ads_cft.jpeg>
 Package pdftex.def Info: ads_cft.jpeg  used on input line 67.
@@ -389,7 +389,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 114.
 
 [6]
-<mincut_graph.jpeg, id=144, 1288.815pt x 901.3675pt>
+<mincut_graph.jpeg, id=53, 1288.815pt x 901.3675pt>
 File: mincut_graph.jpeg Graphic file (type jpg)
 <use mincut_graph.jpeg>
 Package pdftex.def Info: mincut_graph.jpeg  used on input line 164.
@@ -399,83 +399,108 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--182
 
  []
 
-<vertex_subregions.jpeg, id=157, 1138.2525pt x 336.25626pt>
+<vertex_subregions.jpeg, id=69, 1138.2525pt x 336.25626pt>
 File: vertex_subregions.jpeg Graphic file (type jpg)
 <use vertex_subregions.jpeg>
 Package pdftex.def Info: vertex_subregions.jpeg  used on input line 196.
 (pdftex.def)             Requested size: 452.9679pt x 133.81258pt.
 [8]
-<subadditivity.jpeg, id=163, 847.165pt x 351.3125pt>
+<subadditivity.jpeg, id=80, 812.03375pt x 385.44pt>
 File: subadditivity.jpeg Graphic file (type jpg)
 <use subadditivity.jpeg>
 Package pdftex.def Info: subadditivity.jpeg  used on input line 209.
-(pdftex.def)             Requested size: 452.9679pt x 187.84042pt.
-<strong_subaddivity.png, id=164, 673.51625pt x 254.9525pt>
-File: strong_subaddivity.png Graphic file (type png)
-<use strong_subaddivity.png>
-Package pdftex.def Info: strong_subaddivity.png  used on input line 219.
-(pdftex.def)             Requested size: 362.37569pt x 137.17433pt.
+(pdftex.def)             Requested size: 452.9679pt x 215.00389pt.
+<SA_ex.jpeg, id=81, 1063.975pt x 477.785pt>
+File: SA_ex.jpeg Graphic file (type jpg)
+<use SA_ex.jpeg>
+Package pdftex.def Info: SA_ex.jpeg  used on input line 217.
+(pdftex.def)             Requested size: 452.9679pt x 203.40222pt.
  [9 <./vertex_subregions.jpeg> <./subadditivity.jpeg>]
-<parts.pdf, id=174, 794.97pt x 533.995pt>
+
+LaTeX Warning: File `SSA.jpeg' not found on input line 227.
+
+
+/Users/admin/Desktop/research/DBRP/paper.tex:227: Package pdftex.def Error: File `SSA.jpeg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 ...cludegraphics[width=\textwidth]{SSA.jpeg}
+                                                    % Adjust width as needed
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[10 <./SA_ex.jpeg>] [11]
+<parts.pdf, id=104, 794.97pt x 533.995pt>
 File: parts.pdf Graphic file (type pdf)
 <use parts.pdf>
-Package pdftex.def Info: parts.pdf  used on input line 259.
+Package pdftex.def Info: parts.pdf  used on input line 269.
 (pdftex.def)             Requested size: 362.37569pt x 243.41624pt.
- [10 <./strong_subaddivity.png>]
-<bulkless_graph.pdf, id=186, 652.4375pt x 614.295pt>
+<bulkless_graph.pdf, id=105, 652.4375pt x 614.295pt>
 File: bulkless_graph.pdf Graphic file (type pdf)
 <use bulkless_graph.pdf>
-Package pdftex.def Info: bulkless_graph.pdf  used on input line 280.
+Package pdftex.def Info: bulkless_graph.pdf  used on input line 290.
 (pdftex.def)             Requested size: 271.7835pt x 255.9025pt.
- [11 <./parts.pdf>]
+ [12 <./parts.pdf>]
 
 pdfTeX warning: pdflatex (file ./chord_construct.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<chord_construct.pdf, id=201, 614.295pt x 700.6175pt>
+<chord_construct.pdf, id=123, 614.295pt x 700.6175pt>
 File: chord_construct.pdf Graphic file (type pdf)
 <use chord_construct.pdf>
-Package pdftex.def Info: chord_construct.pdf  used on input line 294.
+Package pdftex.def Info: chord_construct.pdf  used on input line 304.
 (pdftex.def)             Requested size: 271.7835pt x 309.97244pt.
-[12 <./bulkless_graph.pdf>]
-<edge_weights.pdf, id=214, 730.73pt x 614.295pt>
+[13 <./bulkless_graph.pdf>]
+<edge_weights.pdf, id=137, 730.73pt x 614.295pt>
 File: edge_weights.pdf Graphic file (type pdf)
 <use edge_weights.pdf>
-Package pdftex.def Info: edge_weights.pdf  used on input line 311.
+Package pdftex.def Info: edge_weights.pdf  used on input line 321.
 (pdftex.def)             Requested size: 271.7835pt x 228.476pt.
- [13 <./chord_construct.pdf>]
+ [14 <./chord_construct.pdf>]
 
 pdfTeX warning: pdflatex (file ./harmonic.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<harmonic.pdf, id=231, 706.64pt x 614.295pt>
+<harmonic.pdf, id=154, 706.64pt x 614.295pt>
 File: harmonic.pdf Graphic file (type pdf)
 <use harmonic.pdf>
-Package pdftex.def Info: harmonic.pdf  used on input line 318.
+Package pdftex.def Info: harmonic.pdf  used on input line 328.
 (pdftex.def)             Requested size: 362.37569pt x 315.02037pt.
-[14 <./edge_weights.pdf> <./harmonic.pdf>]
-<dbrp_summed.pdf, id=271, 456.74641pt x 590.6567pt>
+[15 <./edge_weights.pdf> <./harmonic.pdf>]
+<dbrp_summed.pdf, id=194, 456.74641pt x 590.6567pt>
 File: dbrp_summed.pdf Graphic file (type pdf)
 <use dbrp_summed.pdf>
-Package pdftex.def Info: dbrp_summed.pdf  used on input line 328.
+Package pdftex.def Info: dbrp_summed.pdf  used on input line 338.
 (pdftex.def)             Requested size: 362.37569pt x 468.64154pt.
- [15 <./dbrp_summed.pdf>] [16] (./paper.aux)
+ [16 <./dbrp_summed.pdf>] [17] (./paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: DDF62D62CE0BB08DE5428A6EF2CB6444;3699.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `paper.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  DDF62D62CE0BB08DE5428A6EF2CB6444;3699.
  ) 
 Here is how much of TeX's memory you used:
- 10195 strings out of 474116
- 158006 string characters out of 5743682
+ 10202 strings out of 474116
+ 158114 string characters out of 5743682
  1936187 words of memory out of 5000000
- 32371 multiletter control sequences out of 15000+600000
- 568600 words of font info for 76 fonts, out of 8000000 for 9000
+ 32381 multiletter control sequences out of 15000+600000
+ 568769 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,750b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,750b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on paper.pdf (16 pages, 4857663 bytes).
+Output written on paper.pdf (17 pages, 4918989 bytes).
 PDF statistics:
- 583 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
- 65 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 506 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1741801188.66199 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1741801189.80285 0
-  "/Users/admin/Desktop/research/DBRP/paper.tex" 1741801187.21114 24282 50503ff2443b9166b5cd938db49104ae ""
+["pdflatex"] 1741803581.85433 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1741803583.12087 2
+  "/Users/admin/Desktop/research/DBRP/paper.tex" 1741803580.33226 25271 400e2b6c2edcb1ba29aa5f1578126f4a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -96,6 +96,8 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1739840401.11152 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1739840359 8221431 d72b043d28ca387332694ef0884594f5 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
+  "SA_ex.jpeg" 1741802269.98107 144241 5c0743ce38f69601dee7cc404af3f5f9 ""
+  "SSA.jpeg" 0 -1 0 ""
   "ads_cft.jpeg" 1741376728.80171 562715 6b07cf344c952cdc2d44559264977d5d ""
   "bulkless_graph.pdf" 1741308992 254391 4cb9a11bb8f15327fff6d6fee1813335 ""
   "chord_construct.pdf" 1741309022 505245 9c2458666af4b3543adedf5a04c5eb7d ""
@@ -103,13 +105,12 @@
   "edge_weights.pdf" 1741309042 327741 293416cbffbc86cf6c1d573b4a0b2821 ""
   "harmonic.pdf" 1741309075 476426 66d1e804773cfbe2eefa6bb5663ba194 ""
   "mincut_graph.jpeg" 1741478689.4985 427735 b928d4231a6c5a5a6a1209bc72eb1ca9 ""
-  "paper.aux" 1741801189.67337 5899 587c141d30e87525447b60fb45a73be3 "pdflatex"
-  "paper.out" 1741801189.67485 3699 ddf62d62ce0bb08de5428a6ef2cb6444 "pdflatex"
-  "paper.tex" 1741801187.21114 24282 50503ff2443b9166b5cd938db49104ae ""
-  "paper.toc" 1741801189.67519 1830 f27e84eca1915b1b14767ebad54b79c4 "pdflatex"
+  "paper.aux" 1741803582.95276 6882 3643f9dbc8ee79812bb8a607ac25bfdb "pdflatex"
+  "paper.out" 1741803582.955 3699 ddf62d62ce0bb08de5428a6ef2cb6444 "pdflatex"
+  "paper.tex" 1741803580.33226 25271 400e2b6c2edcb1ba29aa5f1578126f4a ""
+  "paper.toc" 1741803582.95556 1830 590bb2380eb63f7179c8936a258b7f7c "pdflatex"
   "parts.pdf" 1741308960 57021 8f8bdec36d132b8a6bedcc3466511ec7 ""
-  "strong_subaddivity.png" 1741308894.57991 97913 fa9465a79cf284922b2be21a7da5c227 ""
-  "subadditivity.jpeg" 1741800907.29589 86224 73b68aaa323d2c816ee49160f3d29b32 ""
+  "subadditivity.jpeg" 1741802269.98234 86887 7a0d767b111d9261f7047ec2c45132a3 ""
   "vertex_subregions.jpeg" 1741800207.86803 169785 e853f13694e57e28814cd7becec3ec85 ""
   (generated)
   "paper.aux"
