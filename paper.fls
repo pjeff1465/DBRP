@@ -185,11 +185,11 @@ INPUT ./mincut_graph.jpeg
 INPUT ./mincut_graph.jpeg
 INPUT ./mincut_graph.jpeg
 INPUT ./mincut_graph.jpeg
-INPUT ./subregions.png
-INPUT ./subregions.png
-INPUT ./subregions.png
-INPUT ./subregions.png
-INPUT ./subregions.png
+INPUT ./vertex_subregions.jpeg
+INPUT ./vertex_subregions.jpeg
+INPUT ./vertex_subregions.jpeg
+INPUT ./vertex_subregions.jpeg
+INPUT ./vertex_subregions.jpeg
 INPUT ./subaddivity.png
 INPUT ./subaddivity.png
 INPUT ./subaddivity.png
