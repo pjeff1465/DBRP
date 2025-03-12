@@ -190,11 +190,11 @@ INPUT ./vertex_subregions.jpeg
 INPUT ./vertex_subregions.jpeg
 INPUT ./vertex_subregions.jpeg
 INPUT ./vertex_subregions.jpeg
-INPUT ./subaddivity.png
-INPUT ./subaddivity.png
-INPUT ./subaddivity.png
-INPUT ./subaddivity.png
-INPUT ./subaddivity.png
+INPUT ./subadditivity.jpeg
+INPUT ./subadditivity.jpeg
+INPUT ./subadditivity.jpeg
+INPUT ./subadditivity.jpeg
+INPUT ./subadditivity.jpeg
 INPUT ./strong_subaddivity.png
 INPUT ./strong_subaddivity.png
 INPUT ./strong_subaddivity.png

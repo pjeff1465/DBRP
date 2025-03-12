@@ -198,17 +198,18 @@ Use linear programming, for every possibility of what min-cuts could be try to s
     \label{fig:single subregion min-cut}  % Label for referencing
 \end{figure}
 \newpage 
-\section{Required Properties}
-To ensure a solution exists we \textbf{need} the following properties:
+\subsection{Entropy Constraints}
+To ensure a solution exists where all possible min-cuts match all given boundary entropies. We \textbf{need} the following properties:
 
 \begin{enumerate}
-    \item \textbf{Subadditivity (SA)}: entropy of \( A \) plus entropy of \( B \) is \( \geq \) entropy of \( A \cup B \)
-    \[
-    S(A) + S(B) \geq S(AB)
-    \]
-    \begin{center}
-        \includegraphics[width=\linewidth]{subaddivity.png}
-    \end{center}
+    \item \textbf{Subadditivity (SA)}: Entropy of combined system is at most the sum of information in the individual components.
+    This property ensures redundancy exists when storing information across multiple locations. Meaning, potential information overlaps between components, which ensures recovery mechanisms.
+    \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
+        \centering
+        \includegraphics[width=\textwidth]{subadditivity.jpeg}  % Adjust width as needed
+        \caption{The red line value has to be less than or equal to the sum of orange line values in order to ensure subadditivity.}  % Caption text
+        \label{fig:Subadditivity}  % Label for referencing
+    \end{figure}
     
     \item \textbf{Strong Subadditivity (SSA)}
     \[

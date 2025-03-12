@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  12 MAR 2025 12:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.17)  12 MAR 2025 12:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -405,27 +405,27 @@ File: vertex_subregions.jpeg Graphic file (type jpg)
 Package pdftex.def Info: vertex_subregions.jpeg  used on input line 196.
 (pdftex.def)             Requested size: 452.9679pt x 133.81258pt.
 [8]
-<subaddivity.png, id=163, 708.6475pt x 315.1775pt>
-File: subaddivity.png Graphic file (type png)
-<use subaddivity.png>
-Package pdftex.def Info: subaddivity.png  used on input line 210.
-(pdftex.def)             Requested size: 423.5932pt x 188.401pt.
-<strong_subaddivity.png, id=165, 673.51625pt x 254.9525pt>
+<subadditivity.jpeg, id=163, 847.165pt x 351.3125pt>
+File: subadditivity.jpeg Graphic file (type jpg)
+<use subadditivity.jpeg>
+Package pdftex.def Info: subadditivity.jpeg  used on input line 209.
+(pdftex.def)             Requested size: 452.9679pt x 187.84042pt.
+<strong_subaddivity.png, id=164, 673.51625pt x 254.9525pt>
 File: strong_subaddivity.png Graphic file (type png)
 <use strong_subaddivity.png>
-Package pdftex.def Info: strong_subaddivity.png  used on input line 218.
+Package pdftex.def Info: strong_subaddivity.png  used on input line 219.
 (pdftex.def)             Requested size: 362.37569pt x 137.17433pt.
- [9 <./vertex_subregions.jpeg> <./subaddivity.png>]
+ [9 <./vertex_subregions.jpeg> <./subadditivity.jpeg>]
 <parts.pdf, id=174, 794.97pt x 533.995pt>
 File: parts.pdf Graphic file (type pdf)
 <use parts.pdf>
-Package pdftex.def Info: parts.pdf  used on input line 258.
+Package pdftex.def Info: parts.pdf  used on input line 259.
 (pdftex.def)             Requested size: 362.37569pt x 243.41624pt.
  [10 <./strong_subaddivity.png>]
 <bulkless_graph.pdf, id=186, 652.4375pt x 614.295pt>
 File: bulkless_graph.pdf Graphic file (type pdf)
 <use bulkless_graph.pdf>
-Package pdftex.def Info: bulkless_graph.pdf  used on input line 279.
+Package pdftex.def Info: bulkless_graph.pdf  used on input line 280.
 (pdftex.def)             Requested size: 271.7835pt x 255.9025pt.
  [11 <./parts.pdf>]
 
@@ -433,13 +433,13 @@ pdfTeX warning: pdflatex (file ./chord_construct.pdf): PDF inclusion: found PDF 
 <chord_construct.pdf, id=201, 614.295pt x 700.6175pt>
 File: chord_construct.pdf Graphic file (type pdf)
 <use chord_construct.pdf>
-Package pdftex.def Info: chord_construct.pdf  used on input line 293.
+Package pdftex.def Info: chord_construct.pdf  used on input line 294.
 (pdftex.def)             Requested size: 271.7835pt x 309.97244pt.
 [12 <./bulkless_graph.pdf>]
 <edge_weights.pdf, id=214, 730.73pt x 614.295pt>
 File: edge_weights.pdf Graphic file (type pdf)
 <use edge_weights.pdf>
-Package pdftex.def Info: edge_weights.pdf  used on input line 310.
+Package pdftex.def Info: edge_weights.pdf  used on input line 311.
 (pdftex.def)             Requested size: 271.7835pt x 228.476pt.
  [13 <./chord_construct.pdf>]
 
@@ -447,13 +447,13 @@ pdfTeX warning: pdflatex (file ./harmonic.pdf): PDF inclusion: found PDF version
 <harmonic.pdf, id=231, 706.64pt x 614.295pt>
 File: harmonic.pdf Graphic file (type pdf)
 <use harmonic.pdf>
-Package pdftex.def Info: harmonic.pdf  used on input line 317.
+Package pdftex.def Info: harmonic.pdf  used on input line 318.
 (pdftex.def)             Requested size: 362.37569pt x 315.02037pt.
 [14 <./edge_weights.pdf> <./harmonic.pdf>]
 <dbrp_summed.pdf, id=271, 456.74641pt x 590.6567pt>
 File: dbrp_summed.pdf Graphic file (type pdf)
 <use dbrp_summed.pdf>
-Package pdftex.def Info: dbrp_summed.pdf  used on input line 327.
+Package pdftex.def Info: dbrp_summed.pdf  used on input line 328.
 (pdftex.def)             Requested size: 362.37569pt x 468.64154pt.
  [15 <./dbrp_summed.pdf>] [16] (./paper.aux)
  ***********
@@ -461,21 +461,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 328FFD854ACE1F5E00CEC2783C31DE75;3685.
+(rerunfilecheck)             Checksum: DDF62D62CE0BB08DE5428A6EF2CB6444;3699.
  ) 
 Here is how much of TeX's memory you used:
- 10193 strings out of 474116
- 157948 string characters out of 5743682
+ 10195 strings out of 474116
+ 158006 string characters out of 5743682
  1936187 words of memory out of 5000000
- 32370 multiletter control sequences out of 15000+600000
+ 32371 multiletter control sequences out of 15000+600000
  568600 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,750b,658s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,750b,656s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on paper.pdf (16 pages, 4890534 bytes).
+Output written on paper.pdf (16 pages, 4857663 bytes).
 PDF statistics:
  583 PDF objects out of 1000 (max. 8388607)
- 429 compressed objects within 5 object streams
- 64 named destinations out of 1000 (max. 500000)
+ 430 compressed objects within 5 object streams
+ 65 named destinations out of 1000 (max. 500000)
  216 words of extra memory for PDF output out of 10000 (max. 10000000)
 
