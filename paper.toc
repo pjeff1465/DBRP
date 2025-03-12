@@ -13,4 +13,6 @@
 \contentsline {subsection}{\numberline {3.2}Problem Initalization}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Official Problem Statement}{8}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}General Idea}{8}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Extended DBRP}{8}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.5}Upper Bound Proof}{8}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Conclusion}{14}{section.4}%

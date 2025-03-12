@@ -169,17 +169,22 @@ Can model the bulk by a weighted undirected graph where each subregion is an RT 
 \newpage 
 
 \subsection{Official Problem Statement}
-Given as input a list of atomic boundary regions labeled \( 1, \dots, N \), a list of subsets of the regions \( R_1, \dots, R_k \subseteq [N] \), and a real-valued entropy \( S(R_i) \geq 0 \) for each \( R_i \), the weight of the minimum cut separating \( R_i \) from the rest of the boundary vertices (i.e., from \( [N] - R_i \)) is equal to \( S(R_i) \).
+\hspace{0.5cm} Given as input a list of atomic boundary regions labeled \( 1, \dots, N \), a list of subsets of the regions \( R_1, \dots, R_k \subseteq [N] \), and a real-valued entropy \( S(R_i) \geq 0 \) for each \( R_i \), the weight of the minimum cut separating \( R_i \) from the rest of the boundary vertices (i.e., from \( [N] - R_i \)) is equal to \( S(R_i) \).
 
 
 \subsection{General Idea}
-If we are given the complete entanglement structure of the boundary, we are therefore provided with a min-cut graph of the boundary entropies. We can then perform an experiment in the bulk space and use min-cut theory on the boundary to reconstruct the entropy graph. Giving us an interpretation of what the outcome would be in the bulk, because the boundary information is encoded in the bulk.
+\hspace{0.5cm} If we are given the complete entanglement structure of the boundary, we are therefore provided with a min-cut graph of the boundary entropies. We can then perform an experiment in the bulk space and use min-cut theory on the boundary to reconstruct the entropy graph. Giving us an interpretation of what the outcome would be in the bulk, because the boundary information is encoded in the bulk.
 
-\textbf{This is basically the inverse min-cut problem.} Now we are given min-cut, find graph that gave you min-cut solution, therefore this graph is not unique. While the graph is not unique you can add on additional properties. For example, planar, few vertices. For this problem assume no wormholes. For DBRP to work we need to make ensure all quantum states satisfies properties (more on that later). \\
-It is important to note and prove DBRP is computable, meaning it has an upper bound. \\
-It has an upper bound of $2^{2^N}$
+\textbf{This is basically the inverse min-cut problem.} Now we are given min-cut, find graph that gave you min-cut solution, therefore this graph is not unique. While the graph is not unique you can add on additional properties. For example, planar, few vertices. For this problem assume no wormholes. For DBRP to work we need to ensure all quantum states satisfies properties (more on that later). \\
+\\
+\indent In order for DBRP to work we have to prove it is computable. Computable means it has an upper bound.
+Therefore, we will prove DBRP has an upper bound of $2^{2^N}$.
 
-\section*{Proof:}
+\subsubsection{Extended DBRP}
+\hspace{0.5cm} Is it possible to generalize the DBRP to an unknown set of regions? Instead of given a complete set of entanglement structure of the boundary is it possible to create a min-cut graph without a full entanglement structure? I.e. if we have some unknown regions can we find real-valued entropy of said unknown regions?
+
+
+\subsection{Upper Bound Proof}
 Given $K\leq2^N$ boundary regions form all $\leq2^N$ possible intersections of RT regions. At most 1 vertex needed in each region. Using linear programs for each edge weight takes "only" exp(exp(exp(N))) time!
 
 \begin{center}
