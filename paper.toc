@@ -17,4 +17,5 @@
 \contentsline {subsection}{\numberline {3.5}Upper Bound Proof}{8}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Determining Edge Weights}{8}{subsection.3.6}%
 \contentsline {subsection}{\numberline {3.7}Entropy Constraints}{9}{subsection.3.7}%
-\contentsline {section}{\numberline {4}Conclusion}{15}{section.4}%
+\contentsline {section}{\numberline {4}Holographic Quantum State}{11}{section.4}%
+\contentsline {section}{\numberline {5}Conclusion}{16}{section.5}%

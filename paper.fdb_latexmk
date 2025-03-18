@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1741803631.38565 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1741803632.57323 0
-  "/Users/admin/Desktop/research/DBRP/paper.tex" 1741803580.33226 25271 400e2b6c2edcb1ba29aa5f1578126f4a ""
+["pdflatex"] 1741805335.95885 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1741805337.12933 0
+  "/Users/admin/Desktop/research/DBRP/paper.tex" 1741805335.69647 26217 a8b83925147fd90772d7e74520e8e55e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -98,6 +98,7 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "SA_ex.jpeg" 1741802269.98107 144241 5c0743ce38f69601dee7cc404af3f5f9 ""
   "SSA.jpeg" 1741803628.70177 164426 b4cfecf5a7c2202127be25dd7f803261 ""
+  "SSA_ex.jpeg" 1741804096.85846 192477 5b118d64c5f2e0e557ed68c65f90b5f8 ""
   "ads_cft.jpeg" 1741376728.80171 562715 6b07cf344c952cdc2d44559264977d5d ""
   "bulkless_graph.pdf" 1741308992 254391 4cb9a11bb8f15327fff6d6fee1813335 ""
   "chord_construct.pdf" 1741309022 505245 9c2458666af4b3543adedf5a04c5eb7d ""
@@ -105,10 +106,10 @@
   "edge_weights.pdf" 1741309042 327741 293416cbffbc86cf6c1d573b4a0b2821 ""
   "harmonic.pdf" 1741309075 476426 66d1e804773cfbe2eefa6bb5663ba194 ""
   "mincut_graph.jpeg" 1741478689.4985 427735 b928d4231a6c5a5a6a1209bc72eb1ca9 ""
-  "paper.aux" 1741803632.43269 6882 b4d139e5e72e32a2320da0db1200c24f "pdflatex"
-  "paper.out" 1741803632.43425 3699 ddf62d62ce0bb08de5428a6ef2cb6444 "pdflatex"
-  "paper.tex" 1741803580.33226 25271 400e2b6c2edcb1ba29aa5f1578126f4a ""
-  "paper.toc" 1741803632.43465 1830 f27e84eca1915b1b14767ebad54b79c4 "pdflatex"
+  "paper.aux" 1741805336.99989 7312 1fd9ed82d263a7fd6d6d7b492661df59 "pdflatex"
+  "paper.out" 1741805337.00154 3874 176e43511c5c19a3f55096eafb3de084 "pdflatex"
+  "paper.tex" 1741805335.69647 26217 a8b83925147fd90772d7e74520e8e55e ""
+  "paper.toc" 1741805337.00191 1912 fe296c191ca75bb04bcdf093dccb223d "pdflatex"
   "parts.pdf" 1741308960 57021 8f8bdec36d132b8a6bedcc3466511ec7 ""
   "subadditivity.jpeg" 1741802269.98234 86887 7a0d767b111d9261f7047ec2c45132a3 ""
   "vertex_subregions.jpeg" 1741800207.86803 169785 e853f13694e57e28814cd7becec3ec85 ""

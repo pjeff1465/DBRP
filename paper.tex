@@ -215,7 +215,7 @@ To ensure a solution exists where all possible min-cuts match all given boundary
     \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
         \centering
         \includegraphics[width=\textwidth]{SA_ex.jpeg}  % Adjust width as needed
-        \caption{In this example property 1 holds. Therefore edge weight for AB is valid!}  % Caption text
+        \caption{In this example property 1 holds. Therefore, edge weight for AB is valid!}  % Caption text
         \label{fig:Subadditivity Example}  % Label for referencing
     \end{figure}
 
@@ -229,24 +229,41 @@ To ensure a solution exists where all possible min-cuts match all given boundary
         \label{fig:SSA}  % Label for referencing
     \end{figure}
 \end{enumerate}
+We can illustrate this property on our example from above (Fig. 3). Where S(BC) = 5.
+\begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
+    \centering
+    \includegraphics[width=\textwidth]{SSA_ex.jpeg}  % Adjust width as needed
+    \caption{In this example property 2 holds. Therefore, edge weight for ABC is valid!}  % Caption text
+    \label{fig:SSA_ex}  % Label for referencing
+\end{figure}
 
-\section*{Holographic Quantum State}
-\begin{itemize}
-    \item Boundary state in CFT that, due to holography, has a corresponding interpretation in bulk AdS space.
-    \item This allows us to perform computations on a lower-dimensional boundary with no gravity, which then gives us information about higher-dimensional gravity in bulk space.
-    \item Note: Entanglement entropy of a region in boundary can correspond to the area of the minimal surface in the bulk (RT-formula).
-\end{itemize}
 
-All holographic quantum states \textbf{must} satisfy the following property:
-\begin{enumerate}
-    \item \textbf{Monogamy of Mutual Information (MMI)}
-    \[
-    S(AB) + S(BC) + S(AC) \geq S(A) + S(B) + S(C) + S(ABC)
-    \]
-\end{enumerate}
+\newpage
 
-\textbf{Question:} Are these properties what give us geometry?
+\section{Holographic Quantum State}
+\hspace{0.5cm} All boundary states in CFT are holographic. Because of this, there is a corresponding interpretation in bulk AdS space. This allows us to perform computations on a lower-dimensional bounday with no gravity, which then gives us information about higher-dimensional gravity in bulk space, like I stated above (1.3 Holographic Principle). 
+\\
+But in order for holographic quantum state to be valid it \textbf{must} satisfy the following property:
+\vspace{0.3cm}
+\\\textbf{Monogamy of Mutual Information (MMI)}: 
+\[
+S(AB) + S(BC) + S(AC) \geq S(A) + S(B) + S(C) + S(ABC)
+\]
 
+This property represents an additional constraint beyond SSA for holographic entanglement entropy. It ensures the fact that mutual information shared between three regions cannot be arbitrarily distributed.  
+\\ 
+\indent This is important because in holographic systems that have gravitational duals, the way information is distributed must conform to the underlying spacetime geometry. This property ensures the geometric encoding is consistent with the rules of the AdS/CFT correspondence. 
+\\
+We can represent this property on our example from above (Fig. 3). 
+\\
+S(A) = 4, S(B) = 3, S(C) = 4, S(AB) = 5, S(BC) = 5, S(AC) = 6, S(ABC) = 7
+\\
+\[
+5 + 5 + 6 \geq 4 + 3 + 4 + 7
+\]
+\[
+16 \geq 18
+\]
 \section*{DBRP on 1-dimensional Hilbert Space}
 \begin{itemize}
     \item Note: To perform DBRP on a higher-dimensional Hilbert space, take the tensor product of each Hilbert space to create one large Hilbert space.
