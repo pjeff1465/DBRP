@@ -206,7 +206,7 @@ To ensure a solution exists where all possible min-cuts match all given boundary
     This property ensures redundancy exists when storing information across multiple locations. This means potential information overlaps between components, which ensures recovery mechanisms.
     \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
         \centering
-        \includegraphics[width=\textwidth]{subadditivity.jpeg}  % Adjust width as needed
+        \includegraphics[width=\textwidth]{sa.jpeg}  % Adjust width as needed
         \caption{The red line value has to be less than or equal to the sum of orange line values in order to ensure subadditivity.}  % Caption text
         \label{fig:Subadditivity}  % Label for referencing
     \end{figure}
@@ -243,12 +243,15 @@ We can illustrate this property on our example from above (Fig. 3). Where S(BC) 
 \section{Holographic Quantum State}
 \hspace{0.5cm} All boundary states in CFT are holographic. Because of this, there is a corresponding interpretation in bulk AdS space. This allows us to perform computations on a lower-dimensional bounday with no gravity, which then gives us information about higher-dimensional gravity in bulk space, like I stated above (1.3 Holographic Principle). 
 \\
-But in order for holographic quantum state to be valid it \textbf{must} satisfy the following property:
+But in order for a holographic quantum state to be valid it \textbf{must} satisfy the following property:
 \vspace{0.3cm}
 \\\textbf{Monogamy of Mutual Information (MMI)}: 
-\[
-S(AB) + S(BC) + S(AC) \geq S(A) + S(B) + S(C) + S(ABC)
-\]
+\begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
+    \centering
+    \includegraphics[width=\textwidth]{mmi.jpeg}  % Adjust width as needed
+    \caption{This illustration represents the property of MMI in the boundary/ bulk. Where S(AC) = S(A U C)}  % Caption text
+    \label{fig:mmi}  % Label for referencing
+\end{figure}
 
 This property represents an additional constraint beyond SSA for holographic entanglement entropy. It ensures the fact that mutual information shared between three regions cannot be arbitrarily distributed.  
 \\ 
