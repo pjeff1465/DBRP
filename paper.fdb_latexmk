@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1742346813.48377 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1742346814.63557 0
-  "/Users/admin/Desktop/research/DBRP/paper.tex" 1742346813.22934 27465 d3145b21e9091f9daa75eda9b0bf8d6e ""
+["pdflatex"] 1742357356.53798 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1742357357.70589 0
+  "/Users/admin/Desktop/research/DBRP/paper.tex" 1742357355.11234 28975 13e8413814fa4fc6a65cddff69fabd8a ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -96,9 +96,7 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1739840401.11152 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1739840359 8221431 d72b043d28ca387332694ef0884594f5 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "SA_ex.jpeg" 1741802269.98107 144241 5c0743ce38f69601dee7cc404af3f5f9 ""
   "SSA.jpeg" 1741803628.70177 164426 b4cfecf5a7c2202127be25dd7f803261 ""
-  "SSA_ex.jpeg" 1741804096.85846 192477 5b118d64c5f2e0e557ed68c65f90b5f8 ""
   "ads_cft.jpeg" 1741376728.80171 562715 6b07cf344c952cdc2d44559264977d5d ""
   "bulkless_graph.pdf" 1741308992 254391 4cb9a11bb8f15327fff6d6fee1813335 ""
   "chord_construct.pdf" 1741309022 505245 9c2458666af4b3543adedf5a04c5eb7d ""
@@ -107,12 +105,15 @@
   "harmonic.pdf" 1741309075 476426 66d1e804773cfbe2eefa6bb5663ba194 ""
   "mincut_graph.jpeg" 1741478689.4985 427735 b928d4231a6c5a5a6a1209bc72eb1ca9 ""
   "mmi.jpeg" 1742271484.05155 261697 678692503928adb4675ce8f874a5a88e ""
-  "paper.aux" 1742346814.4945 7856 e379594822286d65e1eea3b10b5767b2 "pdflatex"
-  "paper.out" 1742346814.49594 4105 e454507deda8085addf8b9c7cbf0ec0c "pdflatex"
-  "paper.tex" 1742346813.22934 27465 d3145b21e9091f9daa75eda9b0bf8d6e ""
-  "paper.toc" 1742346814.49634 2004 e1ec1b72ca15379de35acb04611f9b54 "pdflatex"
+  "paper.aux" 1742357357.57676 8101 3db27ac99331d65a07dfb9594c255614 "pdflatex"
+  "paper.out" 1742357357.57824 4211 eebeb62d065654c4eb8fe6e946a2d3fb "pdflatex"
+  "paper.tex" 1742357355.11234 28975 13e8413814fa4fc6a65cddff69fabd8a ""
+  "paper.toc" 1742357357.57867 2057 af6ec6a71772620fa5877a423a4f8433 "pdflatex"
   "parts.pdf" 1741308960 57021 8f8bdec36d132b8a6bedcc3466511ec7 ""
   "sa.jpeg" 1742269903.83707 125265 73fd4c32ecb32f2a803b998d016670b3 ""
+  "sa_ex.jpeg" 1742348019.70895 143095 c5a97e3f8de5688c406ac9f3182fc005 ""
+  "ssa_ex.jpeg" 1742348019.71028 194878 8c0386c0baca7030f643b35d0d335c19 ""
+  "values.jpeg" 1742348019.71166 230038 4716e6373263cfffa7d01787aa0b5293 ""
   "vertex_subregions.jpeg" 1741800207.86803 169785 e853f13694e57e28814cd7becec3ec85 ""
   (generated)
   "paper.aux"

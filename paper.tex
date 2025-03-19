@@ -108,56 +108,75 @@
 
 %%%%%%%%%%%%%%%%%%% 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%% RT formula %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{RT formula and Holographic Dictionary}
+\section{Ryu-Takayanagi}
         \hspace{.5cm} It is important to note that there is no need to calculate the entanglement between subsystems. DBRP initially states full AdS/CFT correspondence.
 
-    \subsubsection{Von Neumann entropy}
-        \hspace{0.5cm} Refers to a measure of quantum entanglement, i.e., information contained in a specific region (usually in lower-dimensional CFT). But again, this measurement is not needed for DBRP because it is already defined in the problem initialization.
+    \subsection{Von Neumann entropy}
+        Formal definition:
+        \[
+            S(\rho_A) = -Tr(\rho_{A}log\rho_A)
+        \]
+        \hspace{0.5cm} In DBRP, we do not compute $S(\rho_A)$ directly; instead, the entropy values are provided as inputs and implicitly follow this definition. Von Neumann entropy measures the uncertainty or entanglement of a subsystem.
+        \begin{itemize}
+            \item If $\rho_A$ is a pure state ($S=0$), subsystem A is not entangled with the rest.
+            \item If $\rho_A$ is highly mixed (large $S$), then A is strongly entangled with the rest of the system.
+        \end{itemize}
 
-    \subsubsection{Ryu-Takayanagi (RT)}
-        \hspace{0.5cm} A key entry in holographic dictionary is \textit{Ryu-Takayanagi (RT) formula}. The hologarphic dictionary refers to the correspondence values between the AdS/CFT space.
-        \\
-        Equates von Neumann entropy of subregion of boundary state with the minimal area among all bulk surfaces that end on that boundary region.
-        \\
-        Meaning: Entropy (amount of quantum information) in a certain part of the boundary is tied to the area of the smallest surface that stretches into the bulk but connects to that boundary (geometrical way of understanding quantum entanglement).
-        \\
-        If you know what the minimal area of a subsystem is you know the entanglement entropy of said subsystem with the rest of the system. Therefore, you know the amount of quantum information in subsystem.
+        In the holographic context, Von Neumann entropy describes entanglement entropy in the boundary CFT. However, in DBRP, these entropy values are not computed from wavefunctions but are instead given as problem constraints to reconstruct the bulk geometry via min-cut methods.
+    
+    \subsection{Minimal area of bulk surface}
+        \hspace{0.5cm} In the higher-dimensional bulk space (AdS), there exists a surface whose area corresponds to the entanglement entropy of a boundary region. The smallest possible area of this surface, known as the RT surface, is proportional to the entropy of the boundary subregion. The more entangled a boundary region is, the larger the area of its corresponding minimal surface in the AdS bulk.        
 
-    \subsubsection*{Minimal area of bulk surface}
-    \begin{itemize}
-        \item In the higher-dimensional bulk space (AdS) there exists a surface whose area corresponds to entanglement in boundary region.
-        \item Theory says: Smallest possible area of this surface (RT surface) is proportional to entropy of boundary subregion.
-        \item Meaning: If you can find RT, you know the entropy (or information) of the subregion inside the boundary.
-        \item The more entangled the boundary region is, the larger the area of corresponding surface in the AdS bulk.
-    \end{itemize}
+    \subsection{Ryu-Takayanagi (RT Formula)}
+        \hspace{0.5cm} RT forumla calculates the minimal entanglement entropy in a holographic system by identifying the smallest possible surace that seperates a boundary region from the rest of the system. RT formula states entangelment entropy of subregion A is:
+        \[
+            S(A) = \frac{Area(\gamma_A)}{4G_N}
+        \]
+        \hspace{0.5cm}Where $\gamma_A$ is the minimal surface in the bulk that seperates A from the rest of the system and $G_N$ is Newton's gravitational constant.
+        \\
+        \vspace{0.3cm}
 
-    \textbf{RT surface is proportional to von Neumann entropy which quantifies quantum entanglement or information of subregion.}
+        \hspace{0.5cm} \textit{Ryu-Takayanagi} is a key entry in the holographic dictionary. Where the holographic dictionary refers to the correspondence between the AdS/CFT space. This dictionary relates quantum entanglement in the boundary CFT to geometric structures in the AdS bulk. In particular, the RT formula expresses entanglement entropy as the area of a minimal surface in the bulk. DBRP leverages this principle by using min-cut methods to reconstruct the bulk graphs from entanglement entropy data. Which allows us to implement a discrete version of this holographic mapping.
+        \\
+
+        \hspace{0.5cm} If you know what the minimal area of a subsystem is, you know the entanglement entropy of said subsystem with the rest of the system. Therefore, you know the amount of quantum information in subsystem.
 
 %%%%%%%%%%%%%%%%% DBRP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discrete Bulk Reconstruction Problem}
 \subsection{Background Information}
-\textbf{Tensor Product} is a mathematical operation used to describe a system with multiple qubits. It combines two or more Hilbert spaces into a single composite Hilbert space, or one large vector space. The larger space captures the full state space of the combined quantum system.
+    \hspace{0.5cm}A \textbf{Hilbert space} is a mathematical framework used to describe quantum states. Quantum states exist as vecots in a Hilbert space, where they follow the principles of superposition and inner product structures.
+    \\
+    For example, a single qubit lives in a two-dimensional Hilbert space. More generally, for n-qubit system, the corresponding Hilbert space has dimension $2^n$, meaning the number of possible quantum states grows exponentially with the number of qubits.
+    
+    \vspace{0.3cm}
+
+    \indent A \textbf{Tensor Product} is a mathematical operation used to describe composite quantum systems. If we have two subsystems, their total Hilbert space is the \textbf{tensor product} of their individual Hilbert spaces: 
+    \[
+        \mathcal{H}_{AB} = \mathcal{H}_{A} \otimes \mathcal{H}_B
+    \]
+    This operation combines two or more Hilbert spaces into a single composite space, allowing for entanglment between subsystems. 
+
+\subsection{Min-Cut Theory}
+Formal Definition:
 \\
-The \textbf{Hilbert space} for a single qubit forms a 2-dimensional basis: $|0\rangle$, $|1\rangle$
-\\ For a single qubit the dimension is 2 because for a single qubit there are two possibles states ($|0\rangle$, $|1\rangle$)
-\\ Therefore, for n-qubit system, the Hilbert space will have a total of $2^n$ dimensions, and any state of the system can be written as a linear combination of all these basis states.
-\subsubsection{Min-Cut Theory}
-\begin{itemize}
-    \item Feature of AdS/CFT.
-    \item Given a finite weighted undirected graph \( G \) with real edge weights \( w(e) \geq 0 \), as well as two disjoint vertices \( R, R' \), a min-cut is a set \( C \) of edges with minimum total weight
+Given a finite weighted undirected graph \( G \) with real edge weights \( w(e) \geq 0 \), as well as two disjoint vertices \( R, R' \), a min-cut is a set \( C \) of edges with minimum total weight
     \[
     W = \sum_{e \in C} w(e)
     \]
-    whose removal disconnects \( R \) from \( R' \).
-\end{itemize}
+whose removal disconnects \( R \) from \( R' \).
+
+In the AdS/CFT correspondence, entanglement entropy in the boundary CFT is geometrically represented by minimal surfaces in the bulk (via the Ryu-Takayanagi (RT) formula). In DBRP, we replace the continuous bulk geometry with a discrete graph, where entanglement entropy values are mapped to edge weights.
+
+The min-cut of this graph corresponds to minimal bulk surfaces, allowing entropy calculations without requiring a continuous bulk metric. By applying min-cut theory, DBRP reconstructs the bulk while ensuring a structure that is consistent with quantum error correction properties in holography.
+
 
 \subsection{Problem Initalization}
-Start with Hilbert space for each N atomic boundary regions:
+Start with creating combined Hilbert space for each N atomic boundary subregions:
 \[
 \mathcal{H} = \otimes^{N}_{i=1}\mathcal{H}_{i}
 \]
 
-Can model the bulk by a weighted undirected graph where each subregion is an RT (or minimal area) surface, which corresponds to min-cuts in \( G \).
+The bulk can be modeled by a weighted undirected graph where each subregion is an RT (or minimal area) surface, which corresponds to min-cuts in \( G \).
 
 \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
     \centering
@@ -166,28 +185,19 @@ Can model the bulk by a weighted undirected graph where each subregion is an RT 
     \label{fig:mincut}  % Label for referencing
 \end{figure}
 
-\newpage 
-
 \subsection{Official Problem Statement}
 \hspace{0.5cm} Given as input a list of atomic boundary regions labeled \( 1, \dots, N \), a list of subsets of the regions \( R_1, \dots, R_k \subseteq [N] \), and a real-valued entropy \( S(R_i) \geq 0 \) for each \( R_i \), the weight of the minimum cut separating \( R_i \) from the rest of the boundary vertices (i.e., from \( [N] - R_i \)) is equal to \( S(R_i) \).
 
 
 \subsection{General Idea}
-\hspace{0.5cm} If we are given a complete entaglement structure of the boundary we can reconstruct the bulk graph using the min-cut principle. Given a set of entropy values for different boundary subsystems and lines (edges) representing connectivity, the goal is to place entropy values in a way that minimum cuts across edges math the entanglement structure of the system. Min-cut correspond to entanglement entropy, therefore adjust where the values go to satisfy this relationship.
+\hspace{0.5cm} If we are given a complete entanglement structure of the boundary we can reconstruct the bulk graph using the min-cut principle. Given a set of entropy values for different boundary subsystems and lines (edges) representing connectivity, the goal is to place entropy values in a way that minimum cuts across edges math the entanglement structure of the system. Min-cut correspond to entanglement entropy, therefore adjust where the values go to satisfy this relationship.
 \\
 \indent After applying min-cut and entropy values are assigned correctly, bulk geometry emerges as a discrete graph. Which provides insight into how spacetime itself emerges from entanglement structure in holography. 
 
 \textbf{This is basically the inverse min-cut problem.} Now we are given min-cut, find graph that gave you min-cut solution, therefore this graph is not unique. While the graph is not unique you can add on additional properties. For example, planar, few vertices. For this problem assume no wormholes. For DBRP to work we need to ensure all quantum states satisfies properties (more on that later). \\
 \\
-\textbf{Why min-cut?}
-\\
-\indent Min-cut works because in AdS\& CFT, geodesics (minimal surfaces) correspond to entanglement entropy. Min-cut minics this by partitioning the graph along entropy-based 
 \indent In order for DBRP to work we have to prove it is computable. Computable means it has an upper bound.
 Therefore, we will prove DBRP has an upper bound of $2^{2^N}$.
-
-\subsubsection{Extended DBRP}
-\hspace{0.5cm} Is it possible to generalize the DBRP to an unknown set of regions? Instead of given a complete set of entanglement structure of the boundary is it possible to create a min-cut graph without a full entanglement structure? I.e. if we have some unknown regions can we find real-valued entropy of said unknown regions?
-
 
 \subsection{Upper Bound Proof}
 Given $K\leq2^N$ boundary regions form all $\leq2^N$ possible intersections of RT regions. At most 1 vertex needed in each region. Using linear programs to determine edge weight takes "only" exp(exp(exp(N))) time!
@@ -202,9 +212,18 @@ Use linear programming, for every possibility of what min-cuts could be try to s
     \caption{This illustration shows the process of DBRP and demonstrates a simple min-cut for a single subregion (D). The key challenge of the DBRP is finding a set of edge weights such that ALL possible min-cuts match ALL given boundary entropies simultaneously. For more complex combinations like S(ABC), S(ABD), etc., additional entropy constraints must be implemented to ensure the solution accurately represents the entanglement structure of the boundary theory.}  % Caption text
     \label{fig:single subregion min-cut}  % Label for referencing
 \end{figure}
-\newpage 
+
 \subsection{Entropy Constraints}
 To ensure a solution exists where all possible min-cuts match all given boundary entropies. We \textbf{need} the following properties:
+In order to illustrate following properties I will introduce a complete set of entropy values for a 4-region system. Let A, B, C, D be the four atomic regions.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=.7\textwidth, height=.22\textheight]{values.jpeg}  % Adjust width as needed
+    \caption{Full Entropies of 4 region system}
+\end{figure}
+
+\newpage
 
 \begin{enumerate}
     \item \textbf{Subadditivity (SA)}: Entropy of combined system is at most the sum of information in the individual components.
@@ -219,7 +238,7 @@ To ensure a solution exists where all possible min-cuts match all given boundary
     We can illustrate this property on our example from above (Fig. 3).
     \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
         \centering
-        \includegraphics[width=0.75\textwidth,height=0.2\textheight]{SA_ex.jpeg}  % Adjust width as needed
+        \includegraphics[width=0.75\textwidth,height=0.2\textheight]{sa_ex.jpeg}  % Adjust width as needed
         \caption{In this example property 1 holds. Therefore, edge weight for AB is valid!}  % Caption text
         \label{fig:Subadditivity Example}  % Label for referencing
     \end{figure}
@@ -237,7 +256,7 @@ To ensure a solution exists where all possible min-cuts match all given boundary
 We can illustrate this property on our example from above (Fig. 3). Where S(BC) = 5.
 \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
     \centering
-    \includegraphics[width=0.7\textwidth,height=0.25\textheight]{SSA_ex.jpeg}  % Adjust width as needed
+    \includegraphics[width=0.7\textwidth,height=0.25\textheight]{ssa_ex.jpeg}  % Adjust width as needed
     \caption{In this example property 2 holds. Therefore, edge weight for ABC is valid!}  % Caption text
     \label{fig:SSA_ex}  % Label for referencing
 \end{figure}
@@ -245,7 +264,7 @@ We can illustrate this property on our example from above (Fig. 3). Where S(BC) 
 
 \newpage
 
-\section{Holographic Quantum State}
+\subsection{Holographic Quantum State}
 \hspace{0.5cm} All boundary states in CFT are holographic. Because of this, there is a corresponding interpretation in bulk AdS space. This allows us to perform computations on a lower-dimensional bounday with no gravity, which then gives us information about higher-dimensional gravity in bulk space, like I stated above (1.3 Holographic Principle). 
 \\
 But in order for a holographic quantum state to be valid it \textbf{must} satisfy the following property:
@@ -266,16 +285,16 @@ This property represents an additional constraint beyond SSA for holographic ent
 \\
 \\
 We can represent this property on our example from above (Fig. 3). 
-\\
-S(A) = 4, S(B) = 3, S(C) = 4, S(AB) = 5, S(BC) = 5, S(AC) = 6, S(ABC) = 7
-\\
 \[
-5 + 5 + 6 \geq 4 + 3 + 4 + 7
+6 + 7 + 7 \geq 4 + 4 + 9
 \]
 \[
-16 \geq 18
+20 \geq 17
 \]
-These entropy values do not satisfy MMI meaning they do not come from a holographic system. Therefore, we cannot apply DBRP to construct a bulk graph because it will not be valid. The entanglement structure is not consistent with a geometric bulk interpretation.
+
+\subsection{Extended DBRP?}
+\hspace{0.5cm} Is it possible to generalize the DBRP to an unknown set of regions? Instead of given a complete set of entanglement structure of the boundary is it possible to create a min-cut graph without a full entanglement structure? I.e. if we have some unknown regions can we find real-valued entropy of said unknown regions?
+
 \section{DBRP on 1-dimensional Hilbert Space}
 DBRP is typically performed in higher-dimensional settings but for simplification purposes we will explore DBRP in a 1-dimenionsal Hilbert space
 To perform DBRP on a higher-dimensional Hilbert space, take the tensor product of each Hilbert space to create one large Hilbert space.
