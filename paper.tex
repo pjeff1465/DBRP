@@ -173,10 +173,15 @@ Can model the bulk by a weighted undirected graph where each subregion is an RT 
 
 
 \subsection{General Idea}
-\hspace{0.5cm} If we are given the comsplete entanglement structure of the boundary, we are therefore provided with a min-cut graph of the boundary entropies. We can then perform an experiment in the bulk space and use min-cut theory on the boundary to reconstruct the entropy graph. Giving us an interpretation of what the outcome would be in the bulk, because the boundary information is encoded in the bulk.
+\hspace{0.5cm} If we are given a complete entaglement structure of the boundary we can reconstruct the bulk graph using the min-cut principle. Given a set of entropy values for different boundary subsystems and lines (edges) representing connectivity, the goal is to place entropy values in a way that minimum cuts across edges math the entanglement structure of the system. Min-cut correspond to entanglement entropy, therefore adjust where the values go to satisfy this relationship.
+\\
+\indent After applying min-cut and entropy values are assigned correctly, bulk geometry emerges as a discrete graph. Which provides insight into how spacetime itself emerges from entanglement structure in holography. 
 
 \textbf{This is basically the inverse min-cut problem.} Now we are given min-cut, find graph that gave you min-cut solution, therefore this graph is not unique. While the graph is not unique you can add on additional properties. For example, planar, few vertices. For this problem assume no wormholes. For DBRP to work we need to ensure all quantum states satisfies properties (more on that later). \\
 \\
+\textbf{Why min-cut?}
+\\
+\indent Min-cut works because in AdS\& CFT, geodesics (minimal surfaces) correspond to entanglement entropy. Min-cut minics this by partitioning the graph along entropy-based 
 \indent In order for DBRP to work we have to prove it is computable. Computable means it has an upper bound.
 Therefore, we will prove DBRP has an upper bound of $2^{2^N}$.
 
@@ -206,7 +211,7 @@ To ensure a solution exists where all possible min-cuts match all given boundary
     This property ensures redundancy exists when storing information across multiple locations. This means potential information overlaps between components, which ensures recovery mechanisms.
     \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
         \centering
-        \includegraphics[width=\textwidth]{sa.jpeg}  % Adjust width as needed
+        \includegraphics[width=0.8\textwidth,height=0.2\textheight]{sa.jpeg}  % Adjust width as needed
         \caption{The red line value has to be less than or equal to the sum of orange line values in order to ensure subadditivity.}  % Caption text
         \label{fig:Subadditivity}  % Label for referencing
     \end{figure}
@@ -214,7 +219,7 @@ To ensure a solution exists where all possible min-cuts match all given boundary
     We can illustrate this property on our example from above (Fig. 3).
     \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
         \centering
-        \includegraphics[width=\textwidth]{SA_ex.jpeg}  % Adjust width as needed
+        \includegraphics[width=0.75\textwidth,height=0.2\textheight]{SA_ex.jpeg}  % Adjust width as needed
         \caption{In this example property 1 holds. Therefore, edge weight for AB is valid!}  % Caption text
         \label{fig:Subadditivity Example}  % Label for referencing
     \end{figure}
@@ -224,7 +229,7 @@ To ensure a solution exists where all possible min-cuts match all given boundary
     \item \textbf{Strong Subadditivity (SSA)}: This property extends the concepts of SA to three or more subregions. This property ensures that information overlap exists across three or more components.
     \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
         \centering
-        \includegraphics[width=\textwidth]{SSA.jpeg}  % Adjust width as needed
+        \includegraphics[width=0.75\textwidth,height=0.23\textheight]{SSA.jpeg}  % Adjust width as needed
         \caption{This illustration demonstrates Strong Subadditivity (SSA) on boundary/bulk entropy relationships. In order for the entropy of the ABC subregion to be valid, the sum of entropies S(ABC) + S(B) must be less than or equal to the sum of entropies S(AB) + S(BC).}  % Caption text
         \label{fig:SSA}  % Label for referencing
     \end{figure}
@@ -232,7 +237,7 @@ To ensure a solution exists where all possible min-cuts match all given boundary
 We can illustrate this property on our example from above (Fig. 3). Where S(BC) = 5.
 \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
     \centering
-    \includegraphics[width=\textwidth]{SSA_ex.jpeg}  % Adjust width as needed
+    \includegraphics[width=0.7\textwidth,height=0.25\textheight]{SSA_ex.jpeg}  % Adjust width as needed
     \caption{In this example property 2 holds. Therefore, edge weight for ABC is valid!}  % Caption text
     \label{fig:SSA_ex}  % Label for referencing
 \end{figure}
@@ -246,16 +251,19 @@ We can illustrate this property on our example from above (Fig. 3). Where S(BC) 
 But in order for a holographic quantum state to be valid it \textbf{must} satisfy the following property:
 \vspace{0.3cm}
 \\\textbf{Monogamy of Mutual Information (MMI)}: 
+\[
+S(AB) + S(BC) + S(AC) \geq S(A) + S(B) + S(ABC)
+\] 
 \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
     \centering
-    \includegraphics[width=\textwidth]{mmi.jpeg}  % Adjust width as needed
-    \caption{This illustration represents the property of MMI in the boundary/ bulk. Where S(AC) = S(A U C)}  % Caption text
+    \includegraphics[width=0.9\textwidth, height=0.25\textheight ]{mmi.jpeg}  % Adjust width as needed
+    \caption{This illustration represents the property of MMI in the boundary/ bulk. Where S(AC) is equal to the entropy value of A $\cup$ C.}  % Caption text
     \label{fig:mmi}  % Label for referencing
 \end{figure}
 
-This property represents an additional constraint beyond SSA for holographic entanglement entropy. It ensures the fact that mutual information shared between three regions cannot be arbitrarily distributed.  
-\\ 
-\indent This is important because in holographic systems that have gravitational duals, the way information is distributed must conform to the underlying spacetime geometry. This property ensures the geometric encoding is consistent with the rules of the AdS/CFT correspondence. 
+
+This property represents an additional constraint beyond SSA for holographic entanglement entropy. It ensures the fact that mutual information shared between three regions cannot be arbitrarily distributed. In order for us to utilize DBRP the entanglement entropy must be holographic. This ensures graph produced corresponds to given geometric space. 
+\\
 \\
 We can represent this property on our example from above (Fig. 3). 
 \\
@@ -267,13 +275,13 @@ S(A) = 4, S(B) = 3, S(C) = 4, S(AB) = 5, S(BC) = 5, S(AC) = 6, S(ABC) = 7
 \[
 16 \geq 18
 \]
-\section*{DBRP on 1-dimensional Hilbert Space}
-\begin{itemize}
-    \item Note: To perform DBRP on a higher-dimensional Hilbert space, take the tensor product of each Hilbert space to create one large Hilbert space.
+These entropy values do not satisfy MMI meaning they do not come from a holographic system. Therefore, we cannot apply DBRP to construct a bulk graph because it will not be valid. The entanglement structure is not consistent with a geometric bulk interpretation.
+\section{DBRP on 1-dimensional Hilbert Space}
+DBRP is typically performed in higher-dimensional settings but for simplification purposes we will explore DBRP in a 1-dimenionsal Hilbert space
+To perform DBRP on a higher-dimensional Hilbert space, take the tensor product of each Hilbert space to create one large Hilbert space.
     \[
     \mathcal{H}_{\text{total}} = \mathcal{H}_1 \otimes \mathcal{H}_2 \otimes \dots \otimes \mathcal{H}_N
     \]
-\end{itemize}
 \begin{enumerate}
     \item Upper bound for contiguous boundary regions: 
     \[
@@ -286,12 +294,13 @@ S(A) = 4, S(B) = 3, S(C) = 4, S(AB) = 5, S(BC) = 5, S(AC) = 6, S(ABC) = 7
     \]
     \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
         \centering
-        \includegraphics[width=0.8\textwidth]{parts.pdf}  % Adjust width as needed
+        \includegraphics[width=0.4\textwidth, height=0.2\textheight]{parts.pdf}  % Adjust width as needed
         \caption{Where the first option is in red and second option is in blue}  % Caption text
         \label{fig:example}  % Label for referencing
     \end{figure}
 \end{enumerate}
 
+\newpage
 
 \section*{Theorem: 1D Boundary}
 In special cases of a 1D boundary divided into \( N \) parts, given contiguous entropies satisfying SSA, we can always find a graph model of the bulk in linear time \( O(N^2) \). The graph model is planar, universal, and has \textbf{only} \( O(N^2) \) vertices.
