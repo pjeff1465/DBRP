@@ -169,6 +169,8 @@ In the AdS/CFT correspondence, entanglement entropy in the boundary CFT is geome
 
 The min-cut of this graph corresponds to minimal bulk surfaces, allowing entropy calculations without requiring a continuous bulk metric. By applying min-cut theory, DBRP reconstructs the bulk while ensuring a structure that is consistent with quantum error correction properties in holography.
 
+Min-cut is used as a verification tool to ensure that the graph created properly represents the quantum information properties of the system.
+We use it to verify the graph properly reproduces individual entropy values, strong subadditivity, and monogamy of mutual information.
 
 \subsection{Problem Initalization}
 Start with creating combined Hilbert space for each N atomic boundary subregions:
@@ -295,92 +297,29 @@ We can represent this property on our example from above (Fig. 3).
 \subsection{Extended DBRP?}
 \hspace{0.5cm} Is it possible to generalize the DBRP to an unknown set of regions? Instead of given a complete set of entanglement structure of the boundary is it possible to create a min-cut graph without a full entanglement structure? I.e. if we have some unknown regions can we find real-valued entropy of said unknown regions?
 
-\section{DBRP on 1-dimensional Hilbert Space}
-DBRP is typically performed in higher-dimensional settings but for simplification purposes we will explore DBRP in a 1-dimenionsal Hilbert space
+\section{DBRP on 4D Hilbert Space}
+\hspace{0.5cm} DBRP is typically performed in higher-dimensional settings but for simplification purposes we will explore DBRP the simpliest form possible. In order to use DBRP there needs to be entanglement entropy, which requires at least two subsystems. Therefore, we will look at a system with two qubits.
+\\
+
+A 4D Hilbert space represents two qubits, therefore the total space is: 
+\[
+    \mathbb{C}^2 \otimes \mathbb{C}^2 = \mathbb{C}^4
+\]
+(Where $\mathbb{C}^2$ represents a single qubit becuase a single qubit can either represents $|0\rangle$ or $|1\rangle$)
+\\
 To perform DBRP on a higher-dimensional Hilbert space, take the tensor product of each Hilbert space to create one large Hilbert space.
     \[
-    \mathcal{H}_{\text{total}} = \mathcal{H}_1 \otimes \mathcal{H}_2 \otimes \dots \otimes \mathcal{H}_N
+    \mathcal{H}_{\text{total}} = \mathcal{H}_1 \otimes \mathcal{H}_2 
     \]
-\begin{enumerate}
-    \item Upper bound for contiguous boundary regions: 
-    \[
-    \frac{N(N-1)}{2}
-    \]
-    \item Can specify \textit{all} \( 2^N \) non-contiguous entropies in terms of \( \frac{N(N-1)}{2} \) contiguous entropies.
-    \item Formula is minimum of 2 different possibilities:
-    \[
-    S(AC) = \min\{ S(A) + S(C), S(B) + S(D) \}
-    \]
-    \begin{figure}[htbp]  % 'h' places the figure "here" (can be adjusted)
+
+    \begin{figure}[htbp]
         \centering
-        \includegraphics[width=0.4\textwidth, height=0.2\textheight]{parts.pdf}  % Adjust width as needed
-        \caption{Where the first option is in red and second option is in blue}  % Caption text
-        \label{fig:example}  % Label for referencing
+        \includegraphics[width=0.8\textwidth]{construction.jpeg}  
+        \caption{This illustration shows the process of Fig. 3, adding entanglement entropies to edges.}  
+        \label{fig:construction}  
     \end{figure}
-\end{enumerate}
 
 \newpage
-
-\section*{Theorem: 1D Boundary}
-In special cases of a 1D boundary divided into \( N \) parts, given contiguous entropies satisfying SSA, we can always find a graph model of the bulk in linear time \( O(N^2) \). The graph model is planar, universal, and has \textbf{only} \( O(N^2) \) vertices.
-
-\textbf{Note:} Only need to satisfy SSA for 1D.
-
-\section*{Proof of 1D, with Examples}
-\begin{itemize}
-    \item Any contiguous boundary data that satisfies SSA admits a "bulkless" graph.
-    \item A bulkless graph is a graph of pure edges and no vertices.
-    \item After creating a bulkless graph, we can solve for what the edge weights should be! By using a system of linear equations, SSA ensures nonnegativity.
-\end{itemize}
-
-
-\begin{center}
-    \includegraphics[width=0.6\textwidth]{bulkless_graph.pdf}
-\end{center}
-
-This will lead to a planar graph model of the bulk. The next step will be to get the model...
-
-\section*{Chord Construction}
-\begin{itemize}
-    \item Get model of graph.
-    \item Take all edges in between atomic boundary regions and add a chord (vertex) where each edge intersects.
-    \item Edge weights = weights from bulkless graph.
-\end{itemize}
-
-
-\begin{center}
-    \includegraphics[width=0.6\textwidth]{chord_construct.pdf}
-\end{center}
-
-This yields a planar graph with \( O(N^4) \) vertices (not optimal) and the same cut structure as the bulkless graph.
-
-\textbf{Note:} Since the bulkless graph has correct cut values, the planar graph will also have correct cut values. However, \( O(N^4) \) is not optimal, so a better construction was developed...
-
-\section*{Diamondwork Construction}
-\begin{itemize}
-    \item Yields \( O(N^2) \) vertices and edges.
-    \item Reduce via a planar graph made up of "overlapping" triangles, each contributing weight from the bulkless graph.
-    \item Overlapping triangles are minimal surfaces that cut deeper into the bulk.
-    \item Add edge weights together to overlap them.
-    \item Min-cuts cut the same as the bulkless graph.
-\end{itemize}
-
-\begin{center}
-    \includegraphics[width=0.6\textwidth]{edge_weights.pdf}
-\end{center}
-
-\section*{Harmonic Edge Weights}
-This is the discrete version of AdS geometry. The entropy of a length \( L \) boundary region (where \( L \leq N/2 \)) is given as:
-
-\begin{center}
-    \includegraphics[width=0.8\textwidth]{harmonic.pdf}
-\end{center}
-
-\section*{Why No Black Holes?}
-\begin{itemize}
-    \item All edge weights have the same value, therefore the RT minimal surface means nothing.
-    \item There is no advantage to cutting deeper into the bulk.
-\end{itemize}
 
 \begin{center}
     \includegraphics[width=0.8\textwidth]{dbrp_summed.pdf}
