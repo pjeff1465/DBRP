@@ -350,12 +350,25 @@ Penetrating deeper in the bulk can be visulized on the illustration I included a
 
 \newpage
 
+This illustration shows DBRP summed up and is illustrated on a diamond work graph. 
 \begin{center}
     \includegraphics[width=0.8\textwidth]{dbrp_summed.pdf}
 \end{center}
 
 \section{Conclusion}
-Summarize key findings, limitations, and possible future research directions
+
+\hspace{0.5cm} Discrete Bulk Reconstruction Problem (DBRP) provides a powerful graph-theoretic framework for interpreting entanglement entropy data from no-gravity CFT boundaries. This approach enables more accessible interpretation and calculation of quantum information properties compared to working directly with full 3D graivty AdS bulk. At its core, DBRP represents an inverse min-cut problem: given a complete set of entanglement entropies between boundary subsystems, we seek to construct a bulk graph that faithfully reproduces all entropy values and satisfies the required information-theoretic properties. 
+
+Our investigation has established the foundation for addressing the more challenging scenario where only partial entanglement data is available. The natural progression of this research points towards developing an algorithm capable of reconstructing bulk geometry from incomplete boundary information.
+Such algorithm would need to:
+\begin{enumerate}
+    \item Infer missing entanglement data based on known values
+    \item Impose consistency conditions from quantum information theory (verify properties)
+    \item Leverage symmetry assumptions about the bulk (symmetry lead to a non-unique graph)
+    \item Use optimization techniques to identify the most probably bulk graph configuration from the space of possible solutions
+\end{enumerate}
+
+Successful development of such an algorithm would represent a significant advancement in our understanding of the holographic principle and could provide new insights into the emergence of spacetime from quantum entanglement structures. This work connects directly to broader questions in quantum gravity, tensor networks, and quantum error correction, offering a computational approach to exploring fundamental aspects of the AdS/CFT correspondence.
 
 \newpage
 

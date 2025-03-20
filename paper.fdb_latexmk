@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1742433830.01504 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1742433831.29522 2
-  "/Users/admin/Desktop/research/DBRP/paper.tex" 1742433828.26686 28232 f29b004e71eba30a14cb48d7a274ed5f ""
+["pdflatex"] 1742434955.9066 "/Users/admin/Desktop/research/DBRP/paper.tex" "paper.pdf" "paper" 1742434957.16603 0
+  "/Users/admin/Desktop/research/DBRP/paper.tex" 1742434954.38269 30057 fe9215dd288faacd14bc86b1b6a34032 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
@@ -101,14 +101,14 @@
   "ads_cft.jpeg" 1741376728.80171 562715 6b07cf344c952cdc2d44559264977d5d ""
   "construction.jpeg" 1742406360.52801 949861 fe912f9cfecc50a492e8d207526b862a ""
   "dbrp_summed.pdf" 1741309176 1764173 41206e939525a7d98d1f770e40007e9e ""
-  "deeper.jpeg" 0 -1 0 ""
+  "deeper.jpeg" 1742433900.15882 1459738 1f958b9c979b90a30c610a5fc7eadcf6 ""
   "mincut.jpeg" 1742428663.18111 873447 a8f03757c26d8695033f7da0ed7cf889 ""
   "mincut_graph.jpeg" 1741478689.4985 427735 b928d4231a6c5a5a6a1209bc72eb1ca9 ""
   "mmi.jpeg" 1742271484.05155 261697 678692503928adb4675ce8f874a5a88e ""
-  "paper.aux" 1742433831.1534 8991 9f1f137be4ac3b17fffcda5aaaf1d5bc "pdflatex"
-  "paper.out" 1742433831.15537 4156 db7fba31807888693eabb1ffeda18799 "pdflatex"
-  "paper.tex" 1742433828.26686 28232 f29b004e71eba30a14cb48d7a274ed5f ""
-  "paper.toc" 1742433831.15593 2047 781c441e78ea66d4581e32d96ef21864 "pdflatex"
+  "paper.aux" 1742434957.02476 8991 ecd0b4586e5a57b672e81533cdb75f68 "pdflatex"
+  "paper.out" 1742434957.02636 4156 db7fba31807888693eabb1ffeda18799 "pdflatex"
+  "paper.tex" 1742434954.38269 30057 fe9215dd288faacd14bc86b1b6a34032 ""
+  "paper.toc" 1742434957.02682 2047 781c441e78ea66d4581e32d96ef21864 "pdflatex"
   "sa.jpeg" 1742269903.83707 125265 73fd4c32ecb32f2a803b998d016670b3 ""
   "sa_ex.jpeg" 1742348019.70895 143095 c5a97e3f8de5688c406ac9f3182fc005 ""
   "ssa_ex.jpeg" 1742348019.71028 194878 8c0386c0baca7030f643b35d0d335c19 ""
