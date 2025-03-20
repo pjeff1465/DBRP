@@ -65,7 +65,7 @@
         \begin{figure}[htbp]
             \centering
             \includegraphics[width=0.8\textwidth]{ads_cft.jpeg}  
-            \caption{This illustration shows the AdS/CFT spacetime. A geodesic is a straight line across the hyperbolic disk, which is the shortest path between points. In the context of anti-de Sitter spacetime, a geodesic represents the path that a particle follows when only affected by gravity.}  
+            \caption{This illustration shows the AdS/CFT spacetime, where the AdS can be thought of as soup in the can and CFT is the soup can label. A geodesic is a straight line across the hyperbolic disk, which is the shortest path between points. In the context of anti-de Sitter spacetime, a geodesic represents the path that a particle follows when only affected by gravity.}  
             \label{fig:AdS/CFT space}  
         \end{figure}
 
@@ -314,18 +314,38 @@ To perform DBRP on a higher-dimensional Hilbert space, take the tensor product o
 
     \begin{figure}[htbp]
         \centering
-        \includegraphics[width=1.1\textwidth, height=.85\textheight]{construction.jpeg}  
+        \includegraphics[width=\textwidth]{construction.jpeg}  
         \caption{This illustration shows the process of Fig. 3, adding entanglement entropies to edges.}  
         \label{fig:construction}  
     \end{figure}
 
+\newpage 
+
 We then can use min-cut properties to verify all entanglement entropies and properties hold for constructed graph.
+
+In order to fully construct the bulk graph for the set of entanglement entropies from example above we will have to penetrate "deeper" into the bulk in order to find the minimal edge for the min-cut. In order to simplify the illustration of min-cut I am going to introduce a new set of entanglement entropies so I can demonstrate min-cut between subregions.
+
+Given set of entropies: 
+\[
+    S(A) = 3, S(B) = 3, S(C) = 4, S(D) = 3, S(AD) = 5
+\]
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{mincut.jpeg}  
+    \caption{This illustration shows how to use min-cut in order to verify edge weights.}  
+    \label{fig:mincut example}  
+\end{figure}
+
+Edge weight values of A, B, C, D, are implied because there is only one possible edge for these values to be on. But as we penetrate deeper into the bulk these values are unknown. This is when we will introduce linear programming in order to determine the weights of edges as we penetrate deeper into the bulk. We then use min-cut in order to verify edge weights chosen are correct (as shown in illustration).
+\\
+
+Penetrating deeper in the bulk can be visulized on the illustration I included above (Fig. 1).
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.1\textwidth, height=.85\textheight]{mincut.jpeg}  
-    \caption{}  
-    \label{fig:mincut}  
+    \includegraphics[width=\textwidth]{deeper.jpeg}  
+    \caption{This illustration shows what it looks like to penetrate deeper in the bulk to find min-cut edges.}  
+    \label{fig:penetrating bulk}  
 \end{figure}
 
 \newpage
