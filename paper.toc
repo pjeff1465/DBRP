@@ -12,7 +12,7 @@
 \contentsline {subsection}{\numberline {3.1}Background Information}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Min-Cut Theory}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Problem Initalization}{8}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Official Problem Statement}{8}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.4}Formal Problem Statement}{8}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}General Idea}{9}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Upper Bound Proof}{9}{subsection.3.6}%
 \contentsline {subsection}{\numberline {3.7}Determining Edge Weights}{9}{subsection.3.7}%
